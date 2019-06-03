@@ -82,4 +82,4 @@ add_executable(mastermind
         CMakeLists.txt
         main.cpp
         mastermind.cpp
-        mastermind.h controllers/RedoController.cpp controllers/RedoController.h)
+        mastermind.h controllers/RedoController.cpp controllers/RedoController.h models/Registry.cpp models/Registry.h)

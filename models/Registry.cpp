@@ -1,0 +1,34 @@
+#include "Registry.h"
+
+Registry::Registry(Game *game) {
+    this->game = game;
+}
+
+void Registry::undo(Game *game){
+    GameMemento *gameMemento = game->createMemento();
+    game->restoreMemento(undoList_.front());
+    undoList_.pop_front();
+    redoList_.push_front(gameMemento);
+}
+
+void Registry::redo(Game *game) {
+    GameMemento *gameMemento = game->createMemento();
+    game->restoreMemento(redoList_.front());
+    redoList_.push_front(gameMemento);
+    undoList_.pop_front();
+}
+
+bool Registry::undoable()  {
+    return !undoList_.empty();
+}
+
+bool Registry::redoable() {
+    return !redoList_.empty();
+}
+
+void Registry::reset() {
+    if (game->getTurn() == 0){
+        undoList_.clear();
+        redoList_.clear();
+    }
+}
