@@ -1,0 +1,85 @@
+cmake_minimum_required(VERSION 3.13)
+project(mastermind)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(command)
+include_directories(controllers)
+include_directories(models)
+include_directories(views)
+
+add_executable(mastermind
+        command/command.h
+        command/continueroundcommand.cpp
+        command/continueroundcommand.h
+        command/exitcommand.cpp
+        command/exitcommand.h
+        command/loadcommand.cpp
+        command/loadcommand.h
+        command/redocommand.cpp
+        command/redocommand.h
+        command/savecommand.cpp
+        command/savecommand.h
+        command/startcommand.cpp
+        command/startcommand.h
+        command/undocommand.cpp
+        command/undocommand.h
+        controllers/colocatecontroller.cpp
+        controllers/colocatecontroller.h
+        controllers/compositeingamecontroller.cpp
+        controllers/compositeingamecontroller.h
+        controllers/compositeinitialcontroller.cpp
+        controllers/compositeinitialcontroller.h
+        controllers/continuecontroller.cpp
+        controllers/continuecontroller.h
+        controllers/controller.cpp
+        controllers/controller.h
+        controllers/ExitController.cpp
+        controllers/ExitController.h
+        controllers/game.cpp
+        controllers/game.h
+        controllers/logic.cpp
+        controllers/logic.h
+        controllers/menucontroller.cpp
+        controllers/menucontroller.h
+        controllers/startcontroller.cpp
+        controllers/startcontroller.h
+        controllers/state.h
+        controllers/UndoController.cpp
+        controllers/UndoController.h
+        models/color.cpp
+        models/color.h
+        models/combination.cpp
+        models/combination.h
+        models/GameMemento.cpp
+        models/GameMemento.h
+        models/proposedcombination.cpp
+        models/proposedcombination.h
+        models/result.cpp
+        models/result.h
+        models/secretcombination.cpp
+        models/secretcombination.h
+        views/colocateview.cpp
+        views/colocateview.h
+        views/continueview.cpp
+        views/continueview.h
+        views/controllervisitor.h
+        views/gameview.cpp
+        views/gameview.h
+        views/ingamemenuview.cpp
+        views/ingamemenuview.h
+        views/initialmenuview.cpp
+        views/initialmenuview.h
+        views/mastermindview.cpp
+        views/mastermindview.h
+        views/proposedcombinationview.cpp
+        views/proposedcombinationview.h
+        views/secretcombinationview.cpp
+        views/secretcombinationview.h
+        views/startview.cpp
+        views/startview.h
+        CMakeLists.txt
+        main.cpp
+        mastermind.cpp
+        mastermind.h controllers/RedoController.cpp controllers/RedoController.h)
