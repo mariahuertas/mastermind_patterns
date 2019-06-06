@@ -9,10 +9,6 @@
 class GameMemento : public GameMementoInterface {
 public:
     GameMemento(Game *game, State state, int turn, ProposedCombination **proposedCombination, SecretCombination *secretCombination);
-    ProposedCombination** getProposedCombination();
-    State getState();
-    int getTurn();
-    SecretCombination* getSecretCombination();
     void restoreMemento() override;
 
 private:

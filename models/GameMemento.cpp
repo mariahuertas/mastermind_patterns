@@ -8,22 +8,6 @@ GameMemento::GameMemento(Game *game, State state, int turn, ProposedCombination 
     secretCombination_ = secretCombination;
 }
 
-ProposedCombination **GameMemento::getProposedCombination() {
-    return proposedCombination_;
-}
-
-State GameMemento::getState() {
-    return state_;
-}
-
-int GameMemento::getTurn() {
-    return turn_;
-}
-
-SecretCombination *GameMemento::getSecretCombination() {
-    return secretCombination_;
-}
-
 void GameMemento::restoreMemento(){
     game_->setTurn(turn_);
     game_->setProposedCombination(proposedCombination_);
