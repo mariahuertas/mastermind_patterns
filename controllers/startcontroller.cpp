@@ -15,7 +15,3 @@ void StartController::start(){
 char* StartController::getSecretCombination(){
     return game->getSecretCombination();
 }
-
-void StartController::generateMisteryColours(){
-    return game->generateMisteryColours();
-}

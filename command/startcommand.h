@@ -10,10 +10,8 @@ public:
     void execute() override;
     bool isActive() override;
 
-
 private:
     StartController *startController;
-
 };
 
 #endif // STARTCOMMAND_H

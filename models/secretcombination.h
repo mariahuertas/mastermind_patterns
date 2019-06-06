@@ -5,8 +5,8 @@
 class SecretCombination : public Combination
 {
 public:
-    SecretCombination();
-    ~SecretCombination();
+    SecretCombination() = default;
+    ~SecretCombination() = default;
     void generateMisteryColours ();
 };
 

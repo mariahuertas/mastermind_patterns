@@ -7,7 +7,7 @@ class ContinueRoundCommand: public Command
 {
 public:
     ContinueRoundCommand(ColocateController *colocateController);
-    void execute();
+    void execute() override;
     bool isActive() override;
 
 private:

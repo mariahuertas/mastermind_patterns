@@ -18,8 +18,8 @@ public:
     bool isColor (char value);
 
 private:
-    Color();
-    ~Color();
+    Color() = default;
+    ~Color() = default;
 };
 
 #endif // COLOR_H

@@ -1,6 +1,5 @@
 #include "mastermind.h"
 
-
 MasterMind::MasterMind(){
     logic = new Logic();
     masterMindView = new MasterMindView();
@@ -9,7 +8,6 @@ MasterMind::MasterMind(){
 MasterMind::~MasterMind(){
     delete logic;
     delete masterMindView;
-
 }
 
 void MasterMind::play(){

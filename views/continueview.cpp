@@ -3,14 +3,12 @@
 #include <ctype.h>
 #include <iostream>
 
-ContinueView::ContinueView(){}
-
 void ContinueView::interact(ContinueController *continueController){
-    char respuesta;
+    char option;
     do{
-        std::cout << "¿Desea empezar una nueva partida?" << std::endl;
-        std::cin >> respuesta;
-        respuesta = toupper(respuesta);
-    } while (respuesta != 'Y' && respuesta != 'N');
-    continueController->continueGame(respuesta);
+        std::cout << "¿Do you want to start a new round?" << std::endl;
+        std::cin >> option;
+        option = toupper(option);
+    } while (option != 'Y' && option != 'N');
+    continueController->continueGame(option);
 }

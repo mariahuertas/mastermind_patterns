@@ -5,7 +5,7 @@
 class StartView
 {
 public:
-    StartView();
+    StartView() = default;
     void interact(StartController *startController);
 };
 

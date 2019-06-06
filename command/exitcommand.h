@@ -12,7 +12,6 @@ public:
 
 private:
     ExitController *exitController;
-
 };
 
 #endif // EXITCOMMAND_H

@@ -41,8 +41,6 @@ add_executable(mastermind
         controllers/game.h
         controllers/logic.cpp
         controllers/logic.h
-        controllers/menucontroller.cpp
-        controllers/menucontroller.h
         controllers/startcontroller.cpp
         controllers/startcontroller.h
         controllers/state.h

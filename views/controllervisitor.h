@@ -7,7 +7,6 @@ class ContinueController;
 class ExitController;
 class UndoController;
 class RedoController;
-
 class CompositeInGameController;
 class CompositeInitialController;
 
@@ -21,7 +20,6 @@ public:
     virtual void visit (ExitController *exitController)=0;
     virtual void visit (UndoController *undoController)=0;
     virtual void visit (RedoController *redoController)=0;
-
     virtual void visit (CompositeInitialController *compositeInitialController) =0;
     virtual void visit (CompositeInGameController *compositeInGameController) = 0;
 };

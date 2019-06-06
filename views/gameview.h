@@ -5,7 +5,7 @@
 class GameView
 {
 public:
-    GameView();
+    GameView() = default;
     void interact(ColocateController *colocateController);
     void readCombination(ProposedCombinationView *proposedCombinationView);
     void showGame(ProposedCombinationView *proposedCombinationView, ColocateController *colocateController);

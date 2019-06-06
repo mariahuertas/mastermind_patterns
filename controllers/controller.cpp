@@ -8,13 +8,6 @@ Controller::Controller(Game *game){
     this->registry = &this->game->registry;
 }
 
-Game Controller::getGame(){
-    return *game;
-}
-
-State Controller::getState(){
-    return game->getState();
-}
 void Controller::setState(State state){
     //assert
     return game->setState(state);

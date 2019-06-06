@@ -19,16 +19,11 @@ public:
     CompositeInGameController(Game *game, Registry *registry);
     void accept(ControllerVisitor *controllerVisitor) override;
     std::vector<Command*> getCommandVector();
-    void setCommands();
     void launchCommand(int option);
-    void storeMemento();
-    //void play();
 
 private:
     std::vector<Command*> commandVector;
     ColocateController *colocateController;
-    UndoCommand *undoCommand;
-    std::vector <GameMementoInterface*> vectorGameMemento_;
 
 };
 

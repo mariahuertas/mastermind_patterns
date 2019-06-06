@@ -1,9 +1,8 @@
 #include "startview.h"
 
-StartView::StartView(){}
-
+//DELETE FILE: now it is startCommand
 void StartView:: interact(StartController *startController){
-    std::cout << "Bienvenido al mastermind. Por cada ronda, ingresa 4 colores" << std::endl;
+    std::cout << "Welcome to the mastermind. Insert 4 colors each round" << std::endl;
     startController->start();
     SecretCombinationView *secretCombinationView = new SecretCombinationView (startController);
     secretCombinationView->printSecretCombination();

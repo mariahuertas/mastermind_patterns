@@ -1,7 +1,6 @@
 #ifndef RESULT_H
 #define RESULT_H
 
-
 class Result
 {
 public:
@@ -15,8 +14,6 @@ public:
 private:
     int resultWhite;
     int resultBlack;
-
-
 };
 
 #endif // RESULT_H

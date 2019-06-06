@@ -1,9 +1,6 @@
 #include "savecommand.h"
 
-SaveCommand::SaveCommand(Game *game): Command("Save")
-{
-
-}
+SaveCommand::SaveCommand(Game *game): Command("Save"){}
 
 void SaveCommand::execute(){}
 

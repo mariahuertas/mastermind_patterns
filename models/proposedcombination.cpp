@@ -38,7 +38,6 @@ void ProposedCombination::calculateResult(SecretCombination *secretCombination) 
     }
 }
 
-
 bool ProposedCombination::isWinner() {
-    return (result->getBlackToken()) == colours ? true : false;
+    return (result->getBlackToken()) == colours;
 }

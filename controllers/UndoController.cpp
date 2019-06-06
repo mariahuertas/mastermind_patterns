@@ -1,8 +1,7 @@
 #include "UndoController.h"
 #include "game.h"
-UndoController::UndoController(Game *game):Controller(game) {
+UndoController::UndoController(Game *game):Controller(game) {}
 
-}
 void UndoController::accept(ControllerVisitor *controllerVisitor) {
     controllerVisitor->visit(this);
 }

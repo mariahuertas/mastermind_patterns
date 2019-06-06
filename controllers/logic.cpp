@@ -1,12 +1,8 @@
 #include "logic.h"
 #include "game.h"
 
-Logic::Logic()
-{
+Logic::Logic(){
     game = new Game();
-    //colocateController = new ColocateController(game);
-    //startController = new StartController(game);
-    //continueController = new ContinueController(game);
     registry = new Registry(game);
     compositeInitialController = new CompositeInitialController(game, registry);
     compositeInGameController = new CompositeInGameController(game, registry);
@@ -24,12 +20,3 @@ Controller *Logic::getController(){
         return NULL;
     }
 }
-
-/* INITIAL,
-    IN_GAME,
-    REDO,
-    SAVE,
-    UNDO,
-    LOAD,
-    FINAL,
-    EXIT*/

@@ -6,14 +6,13 @@
 class Command
 {
 public:
+    Command(std::string title){this->title=title;}
     virtual std::string getTitle(){return this->title;}
     virtual void execute()=0;
-    Command(std::string title){this->title=title;}
     virtual bool isActive() = 0;
 
 private:
     std::string title;
-
 };
 
 #endif // COMMAND_H

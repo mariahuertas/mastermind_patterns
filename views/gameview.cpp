@@ -1,11 +1,7 @@
 #include "gameview.h"
 
-GameView::GameView()
-{
-
-}
 void GameView:: interact(ColocateController *colocateController){
-    std::cout<<"\nInserta 4 colores: Red(R), Green(G), Purple(P), Brown(B), Yellow(Y), Orange(O)"<<std::endl;
+    std::cout<<"\nInsert 4 colors: Red(R), Green(G), Purple(P), Brown(B), Yellow(Y), Orange(O)"<<std::endl;
     ProposedCombinationView *proposedCombinationView = new ProposedCombinationView (colocateController);
 
     this->readCombination(proposedCombinationView);
@@ -19,7 +15,6 @@ void GameView:: readCombination(ProposedCombinationView *proposedCombinationView
 
 void GameView:: showGame(ProposedCombinationView *proposedCombinationView, ColocateController *colocateController){
     proposedCombinationView->printCombination();
-
     if(colocateController->isWinner()){
         std::cout << "GANADOR"<<std::endl;
         colocateController->setState(FINAL);
@@ -29,7 +24,6 @@ void GameView:: showGame(ProposedCombinationView *proposedCombinationView, Coloc
         std::cout << "OOHHH" << std::endl;
         colocateController->setState(FINAL);
     }
-
     else
         colocateController->incrementTurn();
 }

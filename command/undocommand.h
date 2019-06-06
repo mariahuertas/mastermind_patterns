@@ -11,11 +11,9 @@ public:
     void execute() override;
     bool isActive() override;
 
-
 private:
     UndoController *undoController;
-   Registry *mementoRegistry_;
-
+    Registry *mementoRegistry_;
 };
 
 #endif // UNDOCOMMAND_H

@@ -1,7 +1,6 @@
 #include "compositeingamecontroller.h"
 
-CompositeInGameController::CompositeInGameController(Game *game, Registry *registry):Controller(game)
-{
+CompositeInGameController::CompositeInGameController(Game *game, Registry *registry) : Controller(game){
     colocateController = new ColocateController(game);
     commandVector.push_back(new ContinueRoundCommand(colocateController));
     commandVector.push_back(new UndoCommand(game, registry));
@@ -14,18 +13,12 @@ CompositeInGameController::CompositeInGameController(Game *game, Registry *regis
 std::vector<Command*> CompositeInGameController:: getCommandVector(){
     return this-> commandVector;
 }
+
 void CompositeInGameController::accept(ControllerVisitor *controllerVisitor){
     controllerVisitor->visit(this);
-}
-void CompositeInGameController:: setCommands(){
-
 }
 
 void CompositeInGameController::launchCommand(int option){
 this->commandVector[option]->execute();
 }
 
-void CompositeInGameController::storeMemento() {
-    //registry.
-    //vectorGameMemento_.push_back(game->createMemento());
-}

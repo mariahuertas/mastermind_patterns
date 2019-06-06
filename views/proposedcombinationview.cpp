@@ -1,7 +1,6 @@
 #include "proposedcombinationview.h"
 
-ProposedCombinationView::ProposedCombinationView(ColocateController *colocateController)
-{
+ProposedCombinationView::ProposedCombinationView(ColocateController *colocateController){
     this->colocateController=colocateController;
 }
 
@@ -12,11 +11,10 @@ void ProposedCombinationView::readCombination(){
     combination = new char [4];
     for(int i=0; i<4; i++){
         do{
-            std::cout << "Inserta el color "<< i+1 <<": ";
+            std::cout << "Insert color "<< i+1 <<": ";
             std::cin >> value;
             value = toupper(value);
         } while(color->isColor(value));
-
         combination[i] = value;
     }
     colocateController->read(combination);
@@ -32,8 +30,7 @@ void ProposedCombinationView::printCombination(){
         {
             std::cout << "|" << auxCombination[j] << "|";
         }
-        std::cout<<" ~ "<<"Black: "<< combination[i]->getResult()->getBlackToken()<<" White: "<< combination[i]->getResult()->getWhiteToken();
-        std::cout<< std::endl;
+        std::cout<<" ~ "<<"Black: "<< combination[i]->getResult()->getBlackToken()<<" White: "<< combination[i]->getResult()->getWhiteToken()<< std::endl;
     }
     std::cout<<std::endl;
 }

@@ -1,9 +1,5 @@
 #include "secretcombination.h"
 
-SecretCombination::SecretCombination():Combination(){}
-
-SecretCombination::~SecretCombination(){}
-
 void SecretCombination::generateMisteryColours(){
     char *enumClassArray = new char[colours];
     char *secretCombination = new char[colours];

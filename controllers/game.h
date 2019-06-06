@@ -30,7 +30,6 @@ public:
     void setSecretCombination(SecretCombination *secretCombination);
     Registry registry;
 
-
 private:
     const static int MAX_PROPOSED_COMBINATION = 10;
     SecretCombination *secretCombination;

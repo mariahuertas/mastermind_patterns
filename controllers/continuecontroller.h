@@ -8,7 +8,7 @@ class ControllerVisitor;
 class ContinueController : public Controller{
 public:
     ContinueController(Game *game);
-    void continueGame(char respuesta);
+    void continueGame(char option);
     void accept(ControllerVisitor *controllerVisitor) override;
     void clear();
 };

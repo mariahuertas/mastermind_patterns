@@ -5,7 +5,7 @@
 class ContinueView
 {
 public:
-    ContinueView();
+    ContinueView() = default;
     void interact(ContinueController *continueController);
 };
 

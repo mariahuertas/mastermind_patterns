@@ -11,7 +11,6 @@ class ProposedCombination : public Combination
 public:
     ProposedCombination();
     ~ProposedCombination();
-    void print();
     void calculateResult(SecretCombination *secretCombination);
     bool isWinner();
     void setProposedCombination(char* proposedCombination);

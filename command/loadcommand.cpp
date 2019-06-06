@@ -1,8 +1,6 @@
 #include "loadcommand.h"
 
-LoadCommand::LoadCommand(Game *game): Command("Load")
-{
-}
+LoadCommand::LoadCommand(Game *game): Command("Load"){}
 
 void LoadCommand::execute(){}
 

@@ -8,7 +8,6 @@ public:
     SaveCommand(Game *game);
     void execute() override;
     bool isActive() override;
-
 };
 
 #endif // SAVECOMMAND_H

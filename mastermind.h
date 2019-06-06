@@ -6,7 +6,6 @@
 #include <ctype.h>
 #include "views/mastermindview.h"
 
-
 class MasterMind
 {
 public:

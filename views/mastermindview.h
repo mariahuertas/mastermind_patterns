@@ -29,9 +29,6 @@ public:
     void visit (UndoController *undoController) override;
     void visit (RedoController *redoController) override;
 
-
-
-
 private:
     InitialMenuView *initialMenuView;
     InGameMenuView *inGameMenuView;

@@ -3,9 +3,9 @@
 
 ContinueController::ContinueController(Game * game) : Controller(game){}
 
-void ContinueController::continueGame(char respuesta){
+void ContinueController::continueGame(char option){
     //assert
-    if (respuesta == 'Y'){
+    if (option == 'Y'){
         this->clear();
         this->setState(INITIAL);
     }

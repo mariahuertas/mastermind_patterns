@@ -5,11 +5,10 @@
 
 class StartController: public Controller {
 public:
+    StartController(Game *game);
     void accept(ControllerVisitor *controllerVisitor) override;
     void start();
-    void generateMisteryColours();
     char* getSecretCombination();
-    StartController(Game *game);
 };
 
 #endif // STARTCONTROLLER_H

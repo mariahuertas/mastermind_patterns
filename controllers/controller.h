@@ -13,8 +13,6 @@ public:
 
 protected:
     Controller(Game *game);
-    State getState();
-    Game getGame();
     Game *game;
     Registry *registry;
 };

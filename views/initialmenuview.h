@@ -5,13 +5,10 @@
 class InitialMenuView
 {
 public:
-    InitialMenuView();
+    InitialMenuView() = default;
     void interact(CompositeInitialController *compositeInitialController);
     void printMenu(std::vector<Command*>vector);
     int getOption();
-
-private:
-
 };
 
 #endif // INITIALMENUVIEW_H

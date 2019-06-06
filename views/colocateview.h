@@ -5,7 +5,7 @@
 class ColocateView
 {
 public:
-    ColocateView();
+    ColocateView() = default;
     void interact(ColocateController *colocateController);
 };
 

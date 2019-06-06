@@ -13,9 +13,6 @@ public:
 
 private:
     Game *game;
-    //ColocateController *colocateController;
-    //StartController *startController;
-    //ContinueController *continueController;
     CompositeInitialController *compositeInitialController;
     CompositeInGameController *compositeInGameController;
     Registry *registry;
