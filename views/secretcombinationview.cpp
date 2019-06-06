@@ -6,11 +6,11 @@ SecretCombinationView::SecretCombinationView(StartController *startController)
 }
 
 void SecretCombinationView:: printSecretCombination(){
-    cout << "Mistery colours: ";
+    std::cout << "Mistery colours: ";
     char * combination = startController->getSecretCombination();
 
     for (int i=0; i<4; i++){
-        cout << combination[i] << " ";
+        std::cout << combination[i] << " ";
     }
-    cout<<endl;
+    std::cout<<std::endl;
 }

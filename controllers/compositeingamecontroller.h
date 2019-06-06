@@ -16,9 +16,9 @@
 class CompositeInGameController: public Controller
 {
 public:
-    CompositeInGameController(Game *game);
+    CompositeInGameController(Game *game, Registry *registry);
     void accept(ControllerVisitor *controllerVisitor) override;
-    vector<Command*> getCommandVector();
+    std::vector<Command*> getCommandVector();
     void setCommands();
     void launchCommand(int option);
     void storeMemento();
@@ -28,7 +28,7 @@ private:
     std::vector<Command*> commandVector;
     ColocateController *colocateController;
     UndoCommand *undoCommand;
-    std::vector <GameMemento*> vectorGameMemento_;
+    std::vector <GameMementoInterface*> vectorGameMemento_;
 
 };
 

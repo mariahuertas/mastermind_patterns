@@ -1,6 +1,8 @@
+#include <models/GameMemento.h>
 #include "game.h"
+#include "Registry.h"
 
-Game::Game(){
+Game::Game():registry(this){
     this->state = INITIAL;
     turn = 0;
     secretCombination = new SecretCombination();
@@ -63,13 +65,22 @@ void Game::clear(){
     turn=0;
 }
 
-GameMemento *Game::createMemento() {
-    return new GameMemento(this->state, this->turn, this->proposedCombination, this->secretCombination);
+GameMementoInterface *Game::createMemento() {
+      return new GameMemento(this, this->state, this->turn, this->proposedCombination, this->secretCombination);
 }
 
-void Game::restoreMemento(GameMemento *gameMemento) {
-    state = gameMemento->getState();
-    turn = gameMemento->getTurn();
-    this->proposedCombination = gameMemento->getProposedCombination();
-    this->secretCombination = gameMemento->getSecretCombination();
+void Game::restoreMemento(GameMementoInterface *gameMemento) {
+    gameMemento->restoreMemento();
+}
+
+void Game::setTurn(int turn) {
+    this->turn = turn;
+}
+
+void Game::setProposedCombination(ProposedCombination **proposedCombination){
+    this->proposedCombination = proposedCombination;
+}
+
+void Game::setSecretCombination(SecretCombination *secretCombination){
+    this->secretCombination = secretCombination;
 }

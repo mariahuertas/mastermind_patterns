@@ -1,6 +1,5 @@
 #ifndef GAMEVIEW_H
 #define GAMEVIEW_H
-#include "colocatecontroller.h"
 #include "proposedcombinationview.h"
 
 class GameView

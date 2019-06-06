@@ -3,7 +3,7 @@
 StartView::StartView(){}
 
 void StartView:: interact(StartController *startController){
-    cout << "Bienvenido al mastermind. Por cada ronda, ingresa 4 colores" << endl;
+    std::cout << "Bienvenido al mastermind. Por cada ronda, ingresa 4 colores" << std::endl;
     startController->start();
     SecretCombinationView *secretCombinationView = new SecretCombinationView (startController);
     secretCombinationView->printSecretCombination();

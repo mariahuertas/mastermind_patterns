@@ -1,8 +1,10 @@
 #ifndef MASTERMIND_REGISTRY_H
 #define MASTERMIND_REGISTRY_H
 #include <list>
-#include "GameMemento.h"
-#include "controllers/game.h"
+#include "GameMementoInterface.h"
+
+class Game;
+
 class Registry {
 public:
     Registry(Game *game);
@@ -17,9 +19,11 @@ public:
 
     void reset();
 
+    void execute();
+
 private:
-    list<GameMemento*> undoList_;
-    list<GameMemento*> redoList_;
+    std::list<GameMementoInterface*> undoList_;
+    std::list<GameMementoInterface*> redoList_;
 
     Game *game;
 

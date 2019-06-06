@@ -8,7 +8,7 @@ void InGameMenuView:: interact(CompositeInGameController *compositeInGameControl
     compositeInGameController->setCommands();
     printMenu(compositeInGameController->getCommandVector());
     compositeInGameController->launchCommand(this->getOption());
-    compositeInGameController->storeMemento();
+   // compositeInGameController->storeMemento();
 }
 
 void InGameMenuView:: printMenu(std::vector<Command*>commandVector){
@@ -18,15 +18,15 @@ void InGameMenuView:: printMenu(std::vector<Command*>commandVector){
     for (unsigned int i=0; i<commandVector.size();i++){
         if(commandVector[i]->isActive()) {
 
-            std::cout << "" << i + 1 << ":" << commandVector[i]->getTitle() << endl;
+            std::cout << "" << i + 1 << ":" << commandVector[i]->getTitle() << std::endl;
         }
     }
 }
 
 int InGameMenuView::getOption(){
     int choice;
-    cout << "Choice: ";
-    cin >> choice;
-    cout << "" << endl;
+    std::cout << "Choice: ";
+    std::cin >> choice;
+    std::cout << "" << std::endl;
     return choice-1;
 }

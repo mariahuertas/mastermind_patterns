@@ -1,7 +1,6 @@
 #ifndef EXITCOMMAND_H
 #define EXITCOMMAND_H
 #include "command.h"
-#include "game.h"
 #include "ExitController.h"
 
 class ExitCommand: public Command

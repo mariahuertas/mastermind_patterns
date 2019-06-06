@@ -1,6 +1,5 @@
 #ifndef CONTINUECONTROLLER_H
 #define CONTINUECONTROLLER_H
-#include "game.h"
 #include "controller.h"
 #include "controllervisitor.h"
 

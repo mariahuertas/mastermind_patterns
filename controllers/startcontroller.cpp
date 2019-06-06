@@ -1,4 +1,5 @@
 #include "startcontroller.h"
+#include "game.h"
 
 StartController::StartController(Game *game):Controller(game){}
 

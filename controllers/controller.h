@@ -1,8 +1,9 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
-#include "game.h"
-#include "state.h"
+
+#include <models/Registry.h>
 #include "controllervisitor.h"
+#include "state.h"
 
 class Controller
 {   
@@ -15,6 +16,7 @@ protected:
     State getState();
     Game getGame();
     Game *game;
+    Registry *registry;
 };
 
 #endif // CONTROLLER_H

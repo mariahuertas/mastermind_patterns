@@ -7,14 +7,14 @@
 class UndoCommand: public Command
 {
 public:
-    UndoCommand(Game *game, std::vector<GameMemento*> *mementoVector);
+    UndoCommand(Game *game, Registry *registry);
     void execute() override;
     bool isActive() override;
 
 
 private:
     UndoController *undoController;
-    std::vector<GameMemento*> *mementoVector_;
+   Registry *mementoRegistry_;
 
 };
 

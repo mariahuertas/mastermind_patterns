@@ -1,6 +1,5 @@
 #ifndef MENUCONTROLLER_H
 #define MENUCONTROLLER_H
-#include "game.h"
 #include "controller.h"
 class MenuController: public Controller
 {

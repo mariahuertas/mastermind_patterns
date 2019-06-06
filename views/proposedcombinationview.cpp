@@ -12,8 +12,8 @@ void ProposedCombinationView::readCombination(){
     combination = new char [4];
     for(int i=0; i<4; i++){
         do{
-            cout << "Inserta el color "<< i+1 <<": ";
-            cin >> value;
+            std::cout << "Inserta el color "<< i+1 <<": ";
+            std::cin >> value;
             value = toupper(value);
         } while(color->isColor(value));
 
@@ -30,11 +30,11 @@ void ProposedCombinationView::printCombination(){
         auxCombination = combination[i]->getCombination();
         for (int j=0; j<4; j++)
         {
-            cout << "|" << auxCombination[j] << "|";
+            std::cout << "|" << auxCombination[j] << "|";
         }
-        cout<<" ~ "<<"Black: "<< combination[i]->getResult()->getBlackToken()<<" White: "<< combination[i]->getResult()->getWhiteToken();
+        std::cout<<" ~ "<<"Black: "<< combination[i]->getResult()->getBlackToken()<<" White: "<< combination[i]->getResult()->getWhiteToken();
         std::cout<< std::endl;
     }
-    cout<<endl;
+    std::cout<<std::endl;
 }
 

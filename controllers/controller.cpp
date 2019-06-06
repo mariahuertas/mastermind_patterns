@@ -1,8 +1,11 @@
+#include <assert.h>
 #include "controller.h"
+#include "game.h"
 
 Controller::Controller(Game *game){
-    assert (game != NULL);
+    assert (game != nullptr);
     this->game = game;
+    this->registry = &this->game->registry;
 }
 
 Game Controller::getGame(){

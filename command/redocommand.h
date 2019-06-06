@@ -8,13 +8,13 @@
 class RedoCommand: public Command
 {
 public:
-    RedoCommand(Game *game, std::vector<GameMemento*> *mementoVector);
+    RedoCommand(Game *game, Registry* registry);
     void execute() override;
     bool isActive() override;
 
 private:
     RedoController *redoController_;
-    std::vector<GameMemento*> *mementoVector_;
+    Registry* mementoRegistry_;
 };
 
 #endif // REDOCOMMAND_H

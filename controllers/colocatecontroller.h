@@ -1,10 +1,10 @@
 #ifndef COLOCATECONTROLLER_H
 #define COLOCATECONTROLLER_H
+
+#include <models/proposedcombination.h>
 #include "controller.h"
-#include "game.h"
 #include "iostream"
 #include "controllervisitor.h"
-using namespace std;
 
 class ColocateController : public Controller
 {

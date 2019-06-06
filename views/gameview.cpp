@@ -26,7 +26,7 @@ void GameView:: showGame(ProposedCombinationView *proposedCombinationView, Coloc
     }
 
     else if (colocateController->getTurn()==10){
-        std::cout << "OOHHH" << endl;
+        std::cout << "OOHHH" << std::endl;
         colocateController->setState(FINAL);
     }
 

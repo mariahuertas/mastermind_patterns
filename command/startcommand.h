@@ -1,7 +1,6 @@
 #ifndef STARTCOMMAND_H
 #define STARTCOMMAND_H
 #include "command.h"
-#include "game.h"
 #include "startview.h"
 
 class StartCommand: public Command

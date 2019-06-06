@@ -1,5 +1,5 @@
 #include "RedoController.h"
-
+#include "game.h"
 
 RedoController::RedoController(Game *game):Controller(game) {
 
@@ -12,10 +12,10 @@ void RedoController::redo() {
 
 }
 
-GameMemento *RedoController::createMemento() {
+GameMementoInterface *RedoController::createMemento() {
     return this->game->createMemento();
 }
 
-void RedoController::restoreMemento(GameMemento *gameMemento) {
+void RedoController::restoreMemento(GameMementoInterface *gameMemento) {
     game->restoreMemento(gameMemento);
 }

@@ -1,4 +1,5 @@
 #include "logic.h"
+#include "game.h"
 
 Logic::Logic()
 {
@@ -6,8 +7,9 @@ Logic::Logic()
     //colocateController = new ColocateController(game);
     //startController = new StartController(game);
     //continueController = new ContinueController(game);
-    compositeInitialController = new CompositeInitialController(game);
-    compositeInGameController = new CompositeInGameController(game);
+    registry = new Registry(game);
+    compositeInitialController = new CompositeInitialController(game, registry);
+    compositeInGameController = new CompositeInGameController(game, registry);
 
 }
 

@@ -1,4 +1,5 @@
 #include "colocatecontroller.h"
+#include "game.h"
 
 ColocateController::ColocateController(Game *game) : Controller(game){}
 
@@ -11,6 +12,7 @@ void ColocateController::incrementTurn(){
 }
 
 void ColocateController::read(char *combination){
+    this->registry->execute();
     return game->read(combination);
 }
 

@@ -1,7 +1,6 @@
 #ifndef COMMAND_H
 #define COMMAND_H
-#include "string.h"
-#include "game.h"
+#include <string>
 #include "controller.h"
 
 class Command

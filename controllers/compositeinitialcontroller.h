@@ -14,8 +14,8 @@ class CompositeInitialController: public Controller
 {
 public:
     void accept(ControllerVisitor *controllerVisitor) override;
-    CompositeInitialController(Game *game);
-    vector<Command*> getCommandVector();
+    CompositeInitialController(Game *game, Registry *registry);
+    std::vector<Command*> getCommandVector();
     void setCommands();
     void launchCommand(int option);
 

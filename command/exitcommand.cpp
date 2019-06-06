@@ -1,3 +1,4 @@
+#include <iostream>
 #include "exitcommand.h"
 
 ExitCommand::ExitCommand(Game *game): Command("Exit")

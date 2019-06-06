@@ -1,10 +1,6 @@
 #ifndef LOGIC_H
 #define LOGIC_H
-#include "game.h"
-#include "colocatecontroller.h"
-#include "startcontroller.h"
-#include "continuecontroller.h"
-#include "controller.h"
+
 #include "state.h"
 #include "compositeinitialcontroller.h"
 #include "compositeingamecontroller.h"
@@ -22,6 +18,7 @@ private:
     //ContinueController *continueController;
     CompositeInitialController *compositeInitialController;
     CompositeInGameController *compositeInGameController;
+    Registry *registry;
 
 };
 

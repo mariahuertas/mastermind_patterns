@@ -2,7 +2,6 @@
 #define MASTERMIND_VIEWS_EXITCONTROLLER_H
 
 #include "controller.h"
-#include "game.h"
 
 class ExitController: public Controller {
 public:

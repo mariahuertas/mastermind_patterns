@@ -2,6 +2,7 @@
 #define COMBINATION_H
 #include <iostream>
 #include <assert.h>
+#include <vector>
 #include "color.h"
 
 class Combination
@@ -13,7 +14,7 @@ public:
     void setCombination(char *combination);
 
 protected:
-    char *combination;
+    std::vector<char> combination;
     int colours;
     Color *color;
 };

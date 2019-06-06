@@ -1,7 +1,8 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <GameMemento.h>
+#include <models/Registry.h>
+#include "GameMementoInterface.h"
 #include "proposedcombination.h"
 #include "secretcombination.h"
 #include "state.h"
@@ -14,6 +15,7 @@ public:
     State getState();
     void setState(State state);
     void read(char *combination);
+    void setTurn(int turn);
     int getTurn();
     bool isWinner();
     ProposedCombination **getProposedCombination();
@@ -22,8 +24,12 @@ public:
     void calculateResult();
     void generateMisteryColours();
     void clear();
-    GameMemento* createMemento();
-    void restoreMemento(GameMemento* gameMemento);
+    GameMementoInterface* createMemento();
+    void restoreMemento(GameMementoInterface* gameMemento);
+    void setProposedCombination(ProposedCombination **proposedCombination);
+    void setSecretCombination(SecretCombination *secretCombination);
+    Registry registry;
+
 
 private:
     const static int MAX_PROPOSED_COMBINATION = 10;

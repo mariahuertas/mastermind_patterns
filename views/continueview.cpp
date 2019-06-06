@@ -1,13 +1,14 @@
 #include "continueview.h"
 #include <cstdlib>
 #include <ctype.h>
+#include <iostream>
 
 ContinueView::ContinueView(){}
 
 void ContinueView::interact(ContinueController *continueController){
     char respuesta;
     do{
-        std::cout << "¿Desea empezar una nueva partida?" << endl;
+        std::cout << "¿Desea empezar una nueva partida?" << std::endl;
         std::cin >> respuesta;
         respuesta = toupper(respuesta);
     } while (respuesta != 'Y' && respuesta != 'N');
