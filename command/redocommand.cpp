@@ -7,9 +7,8 @@ RedoCommand::RedoCommand(Game *game, Registry* registry): Command("Redo")
     mementoRegistry_ = registry;
 }
 void RedoCommand::execute(){
-    //redoController_->restoreMemento(mementoVector_->at(mementoVector_->back()->getTurn()));
-
-    std::cout<< "adding combination....done" << std::endl << std::endl;
+    redoController_->redo();
+    std::cout<< "adding combination....done" << std::endl;
 }
 
 bool RedoCommand::isActive() {

@@ -11,7 +11,6 @@ public:
     void redo();
     void restoreMemento(GameMementoInterface* gameMemento);
     GameMementoInterface* createMemento();
-
 };
 
 
