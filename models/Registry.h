@@ -19,6 +19,7 @@ private:
     std::list<GameMementoInterface*> undoList_;
     std::list<GameMementoInterface*> redoList_;
     Game *game;
+    int firstPrevious;
 };
 
 

@@ -3,6 +3,7 @@
 
 Registry::Registry(Game *game) {
     this->game = game;
+    this->firstPrevious = 0;
 }
 
 void Registry::undo(Game *game){
@@ -20,17 +21,18 @@ void Registry::redo(Game *game) {
 }
 
 bool Registry::undoable()  {
-    return !undoList_.empty();
+    return this->firstPrevious < this->undoList_.size() - 1;;
 }
 
 bool Registry::redoable() {
-    return !redoList_.empty();
+    return this->firstPrevious >= 1;
 }
 
 void Registry::reset() {
     if (game->getTurn() == 0){
         undoList_.clear();
         redoList_.clear();
+        this->firstPrevious = 0;
     }
 }
 
