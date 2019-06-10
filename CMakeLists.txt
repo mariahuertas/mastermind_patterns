@@ -80,4 +80,4 @@ add_executable(mastermind
         CMakeLists.txt
         main.cpp
         mastermind.cpp
-        mastermind.h controllers/RedoController.cpp controllers/RedoController.h models/Registry.cpp models/Registry.h models/GameMementoInterface.h)
+        mastermind.h controllers/RedoController.cpp controllers/RedoController.h models/Registry.cpp models/Registry.h models/GameMementoInterface.h models/DAO/DAO.h models/DAO/GameDAO.cpp models/DAO/GameDAO.h models/DAO/SecretCombinationDAO.cpp models/DAO/SecretCombinationDAO.h models/DAO/CombinationDAO.h models/DAO/CombinationDAO.cpp models/DAO/ProposedCombinationDAO.cpp models/DAO/ProposedCombinationDAO.h models/DAO/ResultDAO.cpp models/DAO/ResultDAO.h)

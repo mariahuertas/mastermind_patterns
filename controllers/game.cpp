@@ -84,3 +84,7 @@ void Game::setProposedCombination(ProposedCombination **proposedCombination){
 void Game::setSecretCombination(SecretCombination *secretCombination){
     this->secretCombination = secretCombination;
 }
+
+SecretCombination* Game::getSecretCombinationObject() {
+    return this->secretCombination;
+}
