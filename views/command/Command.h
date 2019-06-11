@@ -1,7 +1,7 @@
 #ifndef COMMAND_H
 #define COMMAND_H
 #include <string>
-#include "controller.h"
+#include "Controller.h"
 
 class Command
 {

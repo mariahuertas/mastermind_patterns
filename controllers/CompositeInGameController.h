@@ -1,5 +1,5 @@
-#ifndef COMPOSITEINITIALCONTROLLER_H
-#define COMPOSITEINITIALCONTROLLER_H
+#ifndef COMPOSITEINGAMECONTROLLER_H
+#define COMPOSITEINGAMECONTROLLER_H
 #include "Command.h"
 #include "LoadCommand.h"
 #include "SaveCommand.h"
@@ -7,21 +7,24 @@
 #include "UndoCommand.h"
 #include "ExitCommand.h"
 #include "StartCommand.h"
+#include "ContinueRoundCommand.h"
 #include <vector>
-#include "controller.h"
+#include "Controller.h"
+#include "views/models/GameView.h"
+#include "ColocateController.h"
 
-class CompositeInitialController: public Controller
+class CompositeInGameController: public Controller
 {
 public:
+    CompositeInGameController(Game *game, Registry *registry);
     void accept(ControllerVisitor *controllerVisitor) override;
-    CompositeInitialController(Game *game, Registry *registry);
     std::vector<Command*> getCommandVector();
-    void setCommands();
     void launchCommand(int option);
 
 private:
     std::vector<Command*> commandVector;
+    ColocateController *colocateController;
 
 };
 
-#endif // COMPOSITEINITIALCONTROLLER_H
+#endif // COMPOSITEINGAMECONTROLLER_H

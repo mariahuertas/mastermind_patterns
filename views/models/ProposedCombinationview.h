@@ -1,6 +1,6 @@
 #ifndef PROPOSEDCOMBINATIONVIEW_H
 #define PROPOSEDCOMBINATIONVIEW_H
-#include "colocatecontroller.h"
+#include "ColocateController.h"
 
 class ProposedCombinationView
 {

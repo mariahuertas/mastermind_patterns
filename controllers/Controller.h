@@ -3,7 +3,7 @@
 
 #include <models/Registry.h>
 #include "ControllerVisitor.h"
-#include "state.h"
+#include "State.h"
 
 class Controller
 {   

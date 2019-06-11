@@ -1,9 +1,9 @@
 #ifndef LOGIC_H
 #define LOGIC_H
 
-#include "state.h"
-#include "compositeinitialcontroller.h"
-#include "compositeingamecontroller.h"
+#include "State.h"
+#include "CompositeInitialController.h"
+#include "CompositeInGameController.h"
 
 class Logic
 {

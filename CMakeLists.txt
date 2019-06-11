@@ -25,25 +25,25 @@ add_executable(mastermind
         views/command/StartCommand.h
         views/command/UndoCommand.cpp
         views/command/UndoCommand.h
-        controllers/colocatecontroller.cpp
-        controllers/colocatecontroller.h
-        controllers/compositeingamecontroller.cpp
-        controllers/compositeingamecontroller.h
-        controllers/compositeinitialcontroller.cpp
-        controllers/compositeinitialcontroller.h
-        controllers/continuecontroller.cpp
-        controllers/continuecontroller.h
-        controllers/controller.cpp
-        controllers/controller.h
+        controllers/ColocateController.cpp
+        controllers/ColocateController.h
+        controllers/CompositeInGameController.cpp
+        controllers/CompositeInGameController.h
+        controllers/CompositeInitialController.cpp
+        controllers/CompositeInitialController.h
+        controllers/ContinueController.cpp
+        controllers/ContinueController.h
+        controllers/Controller.cpp
+        controllers/Controller.h
         controllers/ExitController.cpp
         controllers/ExitController.h
         models/Game.cpp
         models/Game.h
-        controllers/logic.cpp
-        controllers/logic.h
-        controllers/startcontroller.cpp
-        controllers/startcontroller.h
-        controllers/state.h
+        controllers/Logic.cpp
+        controllers/Logic.h
+        controllers/StartController.cpp
+        controllers/StartController.h
+        controllers/State.h
         controllers/UndoController.cpp
         controllers/UndoController.h
         models/Color.cpp

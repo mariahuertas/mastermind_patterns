@@ -2,7 +2,7 @@
 #define MASTERMIND_REDOCONTROLLER_H
 
 #include <ControllerVisitor.h>
-#include "controller.h"
+#include "Controller.h"
 
 class RedoController: public Controller {
 public:

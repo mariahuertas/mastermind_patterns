@@ -1,6 +1,6 @@
 #ifndef INITIALMENUVIEW_H
 #define INITIALMENUVIEW_H
-#include "compositeinitialcontroller.h"
+#include "CompositeInitialController.h"
 
 class InitialMenuView
 {

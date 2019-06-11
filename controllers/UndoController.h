@@ -2,7 +2,7 @@
 #define MASTERMIND_VIEWS_UNDOCONTROLLER_H
 
 #include <ControllerVisitor.h>
-#include "controller.h"
+#include "Controller.h"
 
 class UndoController: public Controller {
 public:

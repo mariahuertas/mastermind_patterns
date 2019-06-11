@@ -1,4 +1,4 @@
-#include "compositeinitialcontroller.h"
+#include "CompositeInitialController.h"
 
 CompositeInitialController::CompositeInitialController(Game *game, Registry *registry):Controller(game){
     commandVector.push_back(new StartCommand(game));

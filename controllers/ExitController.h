@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_VIEWS_EXITCONTROLLER_H
 #define MASTERMIND_VIEWS_EXITCONTROLLER_H
 
-#include "controller.h"
+#include "Controller.h"
 
 class ExitController: public Controller {
 public:

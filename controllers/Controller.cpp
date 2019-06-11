@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "controller.h"
+#include "Controller.h"
 #include "Game.h"
 
 Controller::Controller(Game *game){

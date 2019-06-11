@@ -1,6 +1,6 @@
 #ifndef CONTINUEVIEW_H
 #define CONTINUEVIEW_H
-#include "continuecontroller.h"
+#include "ContinueController.h"
 
 class ContinueView
 {

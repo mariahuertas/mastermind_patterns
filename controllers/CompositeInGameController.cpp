@@ -1,4 +1,4 @@
-#include "compositeingamecontroller.h"
+#include "CompositeInGameController.h"
 
 CompositeInGameController::CompositeInGameController(Game *game, Registry *registry) : Controller(game){
     colocateController = new ColocateController(game);

@@ -1,15 +1,15 @@
 #ifndef MASTERMINDVIEW_H
 #define MASTERMINDVIEW_H
-#include "controller.h"
+#include "Controller.h"
 #include "ControllerVisitor.h"
-#include "startcontroller.h"
-#include "colocatecontroller.h"
+#include "StartController.h"
+#include "ColocateController.h"
 #include "StartView.h"
 #include "views/models/GameView.h"
 #include "ContinueView.h"
 //////////////////////////////////////////////////////////////////////
-#include "compositeinitialcontroller.h"
-#include "compositeingamecontroller.h"
+#include "CompositeInitialController.h"
+#include "CompositeInGameController.h"
 #include "views/menuComposite/InitialMenuView.h"
 #include "views/menuComposite/InGameMenuView.h"
 

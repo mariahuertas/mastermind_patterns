@@ -1,6 +1,6 @@
 #ifndef MASTERMIND_H
 #define MASTERMIND_H
-#include "controllers/logic.h"
+#include "controllers/Logic.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctype.h>

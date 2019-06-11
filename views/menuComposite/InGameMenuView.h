@@ -1,6 +1,6 @@
 #ifndef INGAMEMENUVIEW_H
 #define INGAMEMENUVIEW_H
-#include "compositeingamecontroller.h"
+#include "CompositeInGameController.h"
 
 class InGameMenuView
 {

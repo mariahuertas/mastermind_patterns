@@ -2,7 +2,7 @@
 #define COLOCATECONTROLLER_H
 
 #include <models/ProposedCombination.h>
-#include "controller.h"
+#include "Controller.h"
 #include "iostream"
 #include "ControllerVisitor.h"
 

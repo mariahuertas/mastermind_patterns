@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_VIEWS_GAMEMEMENTO_H
 #define MASTERMIND_VIEWS_GAMEMEMENTO_H
 
-#include <controllers/state.h>
+#include <controllers/State.h>
 #include "GameMementoInterface.h"
 #include <models/Game.h>
 #include "ProposedCombination.h"

@@ -1,4 +1,4 @@
-#include "continuecontroller.h"
+#include "ContinueController.h"
 #include "Game.h"
 
 ContinueController::ContinueController(Game * game) : Controller(game){}

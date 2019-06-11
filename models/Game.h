@@ -5,7 +5,7 @@
 #include "GameMementoInterface.h"
 #include "ProposedCombination.h"
 #include "SecretCombination.h"
-#include "state.h"
+#include "State.h"
 
 class Game
 {
