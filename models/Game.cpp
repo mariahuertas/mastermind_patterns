@@ -71,7 +71,6 @@ GameMementoInterface *Game::createMemento() {
 }
 
 void Game::restoreMemento(GameMementoInterface *gameMemento) {
-    assert(gameMemento!= nullptr);
     gameMemento->restoreMemento();
 }
 
