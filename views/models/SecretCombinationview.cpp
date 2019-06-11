@@ -6,7 +6,7 @@ SecretCombinationView::SecretCombinationView(StartController *startController){
 
 void SecretCombinationView:: printSecretCombination(){
     std::cout << "Mistery colours: ";
-    char * combination = startController->getSecretCombination();
+    char * combination = this->startController->getSecretCombination();
 
     for (int i=0; i<4; i++){
         std::cout << combination[i] << " ";

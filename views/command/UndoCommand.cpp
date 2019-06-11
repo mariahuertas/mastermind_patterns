@@ -3,11 +3,11 @@
 
 UndoCommand::UndoCommand(Game *game, Registry* registry): Command("Undo"){
     this->undoController = new UndoController(game);
-    mementoRegistry_ = registry;
+    this->mementoRegistry_ = registry;
 }
 
 void UndoCommand::execute(){
-    undoController->undo();
+    this->undoController->undo();
     std::cout<< "Deleting last combination....done" << std::endl;
 }
 

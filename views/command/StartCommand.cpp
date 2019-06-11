@@ -6,8 +6,8 @@ StartCommand::StartCommand(Game* game): Command("Comenzar partida"){
 
 void StartCommand::execute(){
     std::cout << "Welcome to the mastermind. Insert 4 colors each round" << std::endl;
-    startController->start();
-    SecretCombinationView *secretCombinationView = new SecretCombinationView (startController);
+    this->startController->start();
+    SecretCombinationView *secretCombinationView = new SecretCombinationView (this->startController);
     secretCombinationView->printSecretCombination();
 }
 

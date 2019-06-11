@@ -1,12 +1,12 @@
 #include "ContinueRoundCommand.h"
 
 ContinueRoundCommand::ContinueRoundCommand(ColocateController* colocateController): Command("Next Round"){
-    colocateController_ = colocateController;
+    this->colocateController_ = colocateController;
 }
 
 void ContinueRoundCommand::execute(){
     GameView *gameView = new GameView();
-    gameView->interact(colocateController_);
+    gameView->interact(this->colocateController_);
 }
 
 bool ContinueRoundCommand::isActive() {

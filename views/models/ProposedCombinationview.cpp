@@ -17,14 +17,14 @@ void ProposedCombinationView::readCombination(){
         } while(color->isColor(value));
         combination[i] = value;
     }
-    colocateController->read(combination);
+    this->colocateController->read(combination);
 }
 
 void ProposedCombinationView::printCombination(){
-    ProposedCombination **combination = colocateController->getProposedCombination();
+    ProposedCombination **combination = this->colocateController->getProposedCombination();
     char *auxCombination;
 
-    for (int i = 0; i < colocateController->getTurn()+1; i++){
+    for (int i = 0; i < this->colocateController->getTurn()+1; i++){
         auxCombination = combination[i]->getCombination();
         for (int j=0; j<4; j++)
         {

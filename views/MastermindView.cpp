@@ -1,17 +1,17 @@
 #include "MastermindView.h"
 
 MasterMindView::MasterMindView(){
-    startView = new StartView();
-    gameView = new GameView ();
-    continueView = new ContinueView ();
-    initialMenuView = new InitialMenuView();
+    this->startView = new StartView();
+    this->gameView = new GameView ();
+    this->continueView = new ContinueView ();
+    this->initialMenuView = new InitialMenuView();
 }
 
 MasterMindView::~MasterMindView(){
-    delete startView;
-    delete gameView;
-    delete continueView;
-    delete initialMenuView;
+    delete this->startView;
+    delete this->gameView;
+    delete this->continueView;
+    delete this->initialMenuView;
 }
 
 void MasterMindView:: interact(Controller *controller){
@@ -19,23 +19,23 @@ void MasterMindView:: interact(Controller *controller){
 }
 
 void MasterMindView:: visit (StartController *startController){
-    startView->interact(startController);
+    this->startView->interact(startController);
 }
 
 void MasterMindView:: visit (ColocateController *colocateController){
-    gameView->interact(colocateController);
+    this->gameView->interact(colocateController);
 }
 
 void MasterMindView::visit (ContinueController *continueController){
-    continueView->interact(continueController);
+    this->continueView->interact(continueController);
 }
 
 void MasterMindView::visit (CompositeInitialController *compositeInitialController){
-    initialMenuView->interact(compositeInitialController);
+    this->initialMenuView->interact(compositeInitialController);
 }
 
 void MasterMindView::visit (CompositeInGameController *compositeInGameController){
-    inGameMenuView->interact(compositeInGameController);
+    this->inGameMenuView->interact(compositeInGameController);
 }
 
 void MasterMindView::visit (ExitController *exitController){
