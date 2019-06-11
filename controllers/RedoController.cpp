@@ -17,5 +17,6 @@ GameMementoInterface *RedoController::createMemento() {
 }
 
 void RedoController::restoreMemento(GameMementoInterface *gameMemento) {
+    assert(gameMemento!= nullptr);
     game->restoreMemento(gameMemento);
 }

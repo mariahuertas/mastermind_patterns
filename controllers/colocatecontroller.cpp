@@ -12,6 +12,7 @@ void ColocateController::incrementTurn(){
 }
 
 void ColocateController::read(char *combination){
+    assert(combination!= nullptr);
     this->registry->execute();
     return game->read(combination);
 }

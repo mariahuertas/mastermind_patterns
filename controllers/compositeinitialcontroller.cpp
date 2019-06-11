@@ -17,5 +17,6 @@ void CompositeInitialController:: setCommands(){
 }
 
 void CompositeInitialController::launchCommand(int option){
+    assert(0 <= option <= commandVector.size());
     this->commandVector[option]->execute();
 }

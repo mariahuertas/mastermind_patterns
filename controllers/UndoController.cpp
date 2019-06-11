@@ -15,6 +15,7 @@ GameMementoInterface *UndoController::createMemento() {
 }
 
 void UndoController::restoreMemento(GameMementoInterface *gameMemento) {
+    assert(gameMemento!= nullptr);
     game->restoreMemento(gameMemento);
 }
 

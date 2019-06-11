@@ -9,7 +9,6 @@ Controller::Controller(Game *game){
 }
 
 void Controller::setState(State state){
-    //assert
     return game->setState(state);
 }
 

@@ -4,7 +4,7 @@
 ContinueController::ContinueController(Game * game) : Controller(game){}
 
 void ContinueController::continueGame(char option){
-    //assert
+    assert(option == 'Y' || option == 'N');
     if (option == 'Y'){
         this->clear();
         this->setState(INITIAL);

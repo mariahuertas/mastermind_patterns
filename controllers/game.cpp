@@ -29,6 +29,7 @@ void Game::setState(State state){
 }
 
 void Game:: read(char *combination) {
+    assert(combination!= nullptr);
     proposedCombination[getTurn()]->setProposedCombination(combination);
 }
 
@@ -70,6 +71,7 @@ GameMementoInterface *Game::createMemento() {
 }
 
 void Game::restoreMemento(GameMementoInterface *gameMemento) {
+    assert(gameMemento!= nullptr);
     gameMemento->restoreMemento();
 }
 
@@ -78,10 +80,12 @@ void Game::setTurn(int turn) {
 }
 
 void Game::setProposedCombination(ProposedCombination **proposedCombination){
+    assert(proposedCombination!= nullptr);
     this->proposedCombination = proposedCombination;
 }
 
 void Game::setSecretCombination(SecretCombination *secretCombination){
+    assert(secretCombination!= nullptr);
     this->secretCombination = secretCombination;
 }
 
