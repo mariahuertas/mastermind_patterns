@@ -4,24 +4,24 @@
 
 Game::Game():registry(this){
     this->state = INITIAL;
-    turn = 0;
-    secretCombination = new SecretCombination();
-    proposedCombination = new ProposedCombination *[MAX_PROPOSED_COMBINATION];
+    this->turn = 0;
+    this->secretCombination = new SecretCombination();
+    this->proposedCombination = new ProposedCombination *[MAX_PROPOSED_COMBINATION];
     for (int i = 0; i< MAX_PROPOSED_COMBINATION; i++){
-       proposedCombination[i] = new ProposedCombination();
+        this->proposedCombination[i] = new ProposedCombination();
     }
 }
 
 Game::~Game(){
-    delete[] secretCombination;
+    delete[] this->secretCombination;
     for(int i = 0; i < MAX_PROPOSED_COMBINATION; ++i){
-         delete[] proposedCombination[i];
+         delete[] this->proposedCombination[i];
      }
-    delete[] proposedCombination;
+    delete[] this->proposedCombination;
 }
 
 State Game::getState() {
-    return state;
+    return this->state;
 }
 
 void Game::setState(State state){
@@ -30,15 +30,15 @@ void Game::setState(State state){
 
 void Game:: read(char *combination) {
     assert(combination!= nullptr);
-    proposedCombination[getTurn()]->setProposedCombination(combination);
+    this->proposedCombination[getTurn()]->setProposedCombination(combination);
 }
 
 int Game::getTurn(){
-    return turn;
+    return this->turn;
 }
 
 bool Game::isWinner(){
-    return proposedCombination[getTurn()]->isWinner();
+    return this->proposedCombination[getTurn()]->isWinner();
 }
 
 ProposedCombination** Game::getProposedCombination(){
@@ -47,23 +47,23 @@ ProposedCombination** Game::getProposedCombination(){
 
 
 char* Game::getSecretCombination(){
-    return secretCombination->getCombination();
+    return this->secretCombination->getCombination();
 }
 
 void Game::incrementTurn(){
-    turn++;
+    this->turn++;
 }
 
 void Game::calculateResult(){
-    proposedCombination[getTurn()]->calculateResult(secretCombination);
+    this->proposedCombination[getTurn()]->calculateResult(this->secretCombination);
 }
 
 void Game::generateMisteryColours(){
-    secretCombination->generateMisteryColours();
+    this->secretCombination->generateMisteryColours();
 }
 
 void Game::clear(){
-    turn=0;
+    this->turn=0;
 }
 
 GameMementoInterface *Game::createMemento() {
@@ -71,6 +71,7 @@ GameMementoInterface *Game::createMemento() {
 }
 
 void Game::restoreMemento(GameMementoInterface *gameMemento) {
+    assert(gameMemento != nullptr);
     gameMemento->restoreMemento();
 }
 

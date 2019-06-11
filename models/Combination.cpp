@@ -1,7 +1,7 @@
 #include "Combination.h"
 
 Combination::Combination(): combination(4) {
-    colours = 4;
+    this->colours = 4;
 }
 
 Combination::~Combination() = default;

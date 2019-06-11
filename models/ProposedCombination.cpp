@@ -1,11 +1,11 @@
 #include "ProposedCombination.h"
 
 ProposedCombination::ProposedCombination() : Combination() {
-    result = new Result();
+    this->result = new Result();
 }
 
 ProposedCombination::~ProposedCombination() {
-    delete result;
+    delete this->result;
 }
 
 Result *ProposedCombination::getResult() {
@@ -26,13 +26,13 @@ void ProposedCombination::calculateResult(SecretCombination *secretCombination) 
     }
     for (int i = 0; i < colours; i++) {
         if (combination[i] == this->combination[i]) {
-            result->incrementBlackToken();
+            this->result->incrementBlackToken();
             markedCombination[i] = true;
         } else {
             for (int j = 0; j < colours; j++) {
                 if (combination[i] == this->combination[j] &&
                     j != i && markedCombination[j] == false) {
-                    result->incrementWhiteToken();
+                    this->result->incrementWhiteToken();
                     markedCombination[j] = true;
                 }
             }

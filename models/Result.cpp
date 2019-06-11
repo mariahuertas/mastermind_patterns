@@ -1,24 +1,24 @@
 #include "Result.h"
 
 Result::Result(){
-    resultWhite = 0;
-    resultBlack = 0;
+    this->resultWhite = 0;
+    this->resultBlack = 0;
 }
 
 Result::~Result(){}
 
 void Result::incrementWhiteToken(){
-    resultWhite++;
+    this->resultWhite++;
 }
 
 void Result::incrementBlackToken(){
-    resultBlack++;
+    this->resultBlack++;
 }
 
 int Result::getBlackToken(){
-    return resultBlack;
+    return this->resultBlack;
 }
 
 int Result::getWhiteToken(){
-    return resultWhite;
+    return this->resultWhite;
 }

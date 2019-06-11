@@ -32,7 +32,7 @@ bool Registry::redoable() {
 }
 
 void Registry::reset() {
-    if (game->getTurn() == 0){
+    if (this->game->getTurn() == 0){
         undoList_.clear();
         redoList_.clear();
         this->firstPrevious = 0;
@@ -40,7 +40,7 @@ void Registry::reset() {
 }
 
 void Registry::execute() {
-    GameMementoInterface *gameMemento = game->createMemento();
+    GameMementoInterface *gameMemento = this->game->createMemento();
     undoList_.push_front(gameMemento);
     redoList_.clear();
 }
