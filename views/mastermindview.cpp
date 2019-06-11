@@ -46,3 +46,6 @@ void MasterMindView::visit (UndoController *undoController){
 
 void MasterMindView::visit (RedoController *redoController){
 }
+
+void MasterMindView::visit (SaveController *saveController){
+}

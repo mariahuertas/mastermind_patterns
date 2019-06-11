@@ -28,6 +28,7 @@ public:
     void visit (ExitController *exitController) override;
     void visit (UndoController *undoController) override;
     void visit (RedoController *redoController) override;
+    void visit(SaveController *saveController) override;
 
 private:
     InitialMenuView *initialMenuView;
