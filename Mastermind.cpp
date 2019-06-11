@@ -1,4 +1,4 @@
-#include "mastermind.h"
+#include "Mastermind.h"
 
 MasterMind::MasterMind(){
     logic = new Logic();

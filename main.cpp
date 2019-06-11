@@ -1,5 +1,5 @@
 #include <iostream>
-#include "mastermind.h"
+#include "Mastermind.h"
 using namespace std;
 
 int main()
