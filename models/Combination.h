@@ -3,7 +3,7 @@
 #include <iostream>
 #include <assert.h>
 #include <vector>
-#include "color.h"
+#include "Color.h"
 
 class Combination
 {

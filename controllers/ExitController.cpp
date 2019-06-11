@@ -1,5 +1,5 @@
 #include "ExitController.h"
-#include "game.h"
+#include "Game.h"
 
 ExitController::ExitController(Game *game):Controller(game){}
 

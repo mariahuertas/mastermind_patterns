@@ -37,8 +37,8 @@ add_executable(mastermind
         controllers/controller.h
         controllers/ExitController.cpp
         controllers/ExitController.h
-        models/game.cpp
-        models/game.h
+        models/Game.cpp
+        models/Game.h
         controllers/logic.cpp
         controllers/logic.h
         controllers/startcontroller.cpp
@@ -46,18 +46,18 @@ add_executable(mastermind
         controllers/state.h
         controllers/UndoController.cpp
         controllers/UndoController.h
-        models/color.cpp
-        models/color.h
-        models/combination.cpp
-        models/combination.h
+        models/Color.cpp
+        models/Color.h
+        models/Combination.cpp
+        models/Combination.h
         models/GameMemento.cpp
         models/GameMemento.h
-        models/proposedcombination.cpp
-        models/proposedcombination.h
-        models/result.cpp
-        models/result.h
-        models/secretcombination.cpp
-        models/secretcombination.h
+        models/ProposedCombination.cpp
+        models/ProposedCombination.h
+        models/Result.cpp
+        models/Result.h
+        models/SecretCombination.cpp
+        models/SecretCombination.h
         views/ContinueView.cpp
         views/ContinueView.h
         views/ControllerVisitor.h

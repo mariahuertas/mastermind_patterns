@@ -1,5 +1,5 @@
 #include "RedoController.h"
-#include "game.h"
+#include "Game.h"
 
 RedoController::RedoController(Game *game):Controller(game) {
 

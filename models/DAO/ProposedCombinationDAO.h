@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_PROPOSEDCOMBINATIONDAO_H
 #define MASTERMIND_PROPOSEDCOMBINATIONDAO_H
 
-#include <models/proposedcombination.h>
+#include <models/ProposedCombination.h>
 #include "CombinationDAO.h"
 
 class ProposedCombinationDAO : public CombinationDAO {

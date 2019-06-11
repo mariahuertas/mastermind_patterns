@@ -1,5 +1,5 @@
 #include "colocatecontroller.h"
-#include "game.h"
+#include "Game.h"
 
 ColocateController::ColocateController(Game *game) : Controller(game){}
 

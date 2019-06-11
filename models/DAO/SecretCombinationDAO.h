@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_SECRETCOMBINATIONDAO_H
 #define MASTERMIND_SECRETCOMBINATIONDAO_H
 
-#include <models/secretcombination.h>
+#include <models/SecretCombination.h>
 #include "CombinationDAO.h"
 
 class SecretCombinationDAO : public CombinationDAO{

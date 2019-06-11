@@ -1,5 +1,5 @@
 #include "logic.h"
-#include "game.h"
+#include "Game.h"
 
 Logic::Logic(){
     game = new Game();

@@ -3,8 +3,8 @@
 
 #include <models/Registry.h>
 #include "GameMementoInterface.h"
-#include "proposedcombination.h"
-#include "secretcombination.h"
+#include "ProposedCombination.h"
+#include "SecretCombination.h"
 #include "state.h"
 
 class Game

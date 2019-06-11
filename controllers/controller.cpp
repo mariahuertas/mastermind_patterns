@@ -1,6 +1,6 @@
 #include <assert.h>
 #include "controller.h"
-#include "game.h"
+#include "Game.h"
 
 Controller::Controller(Game *game){
     assert (game != nullptr);

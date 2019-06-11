@@ -3,8 +3,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctype.h>
-#include "secretcombination.h"
-#include "result.h"
+#include "SecretCombination.h"
+#include "Result.h"
 
 class ProposedCombination : public Combination
 {

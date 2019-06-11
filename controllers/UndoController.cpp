@@ -1,5 +1,5 @@
 #include "UndoController.h"
-#include "game.h"
+#include "Game.h"
 UndoController::UndoController(Game *game):Controller(game) {}
 
 void UndoController::accept(ControllerVisitor *controllerVisitor) {

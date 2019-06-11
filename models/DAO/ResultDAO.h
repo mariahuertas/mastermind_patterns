@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_RESULTDAO_H
 #define MASTERMIND_RESULTDAO_H
 
-#include <models/result.h>
+#include <models/Result.h>
 #include "DAO.h"
 
 class ResultDAO : public DAO{

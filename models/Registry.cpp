@@ -1,5 +1,5 @@
 #include "Registry.h"
-#include "game.h"
+#include "Game.h"
 
 Registry::Registry(Game *game) {
     assert(game!= nullptr);

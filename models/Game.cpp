@@ -1,5 +1,5 @@
 #include <models/GameMemento.h>
-#include "game.h"
+#include "Game.h"
 #include "Registry.h"
 
 Game::Game():registry(this){

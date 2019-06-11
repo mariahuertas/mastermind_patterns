@@ -1,4 +1,4 @@
-#include "combination.h"
+#include "Combination.h"
 
 Combination::Combination(): combination(4) {
     colours = 4;

@@ -1,6 +1,6 @@
 #ifndef SECRETCOMBINATION_H
 #define SECRETCOMBINATION_H
-#include "combination.h"
+#include "Combination.h"
 
 class SecretCombination : public Combination
 {
