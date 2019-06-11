@@ -1,4 +1,4 @@
-#include "loadcommand.h"
+#include "LoadCommand.h"
 
 LoadCommand::LoadCommand(Game *game): Command("Load"){}
 

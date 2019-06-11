@@ -2,7 +2,7 @@
 #define REDOCOMMAND_H
 
 #include <vector>
-#include "command.h"
+#include "Command.h"
 #include "RedoController.h"
 
 class RedoCommand: public Command

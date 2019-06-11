@@ -1,4 +1,4 @@
-#include "secretcombinationview.h"
+#include "SecretCombinationview.h"
 
 SecretCombinationView::SecretCombinationView(StartController *startController){
     this->startController=startController;

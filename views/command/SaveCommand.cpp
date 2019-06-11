@@ -1,4 +1,20 @@
-#include <iostream>
+#include "SaveCommand.h"
+#include "iostream"
+
+SaveCommand::SaveCommand(Game *game): Command("Save"){
+    this->saveController = new SaveController(game);
+}
+
+void SaveCommand::execute(){
+    saveController->save();
+    std::cout<< "saving game....done" << std::endl;
+}
+
+bool SaveCommand::isActive() {
+    return true;
+}
+
+/*
 #include "redocommand.h"
 
 RedoCommand::RedoCommand(Game *game, Registry* registry): Command("Redo")
@@ -13,6 +29,4 @@ void RedoCommand::execute(){
 
 bool RedoCommand::isActive() {
     return true;
-}
-
-
+}*/

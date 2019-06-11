@@ -1,6 +1,6 @@
 #ifndef GAMEVIEW_H
 #define GAMEVIEW_H
-#include "proposedcombinationview.h"
+#include "ProposedCombinationview.h"
 
 class GameView
 {

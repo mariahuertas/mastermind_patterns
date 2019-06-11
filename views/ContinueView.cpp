@@ -1,4 +1,4 @@
-#include "continueview.h"
+#include "ContinueView.h"
 #include <cstdlib>
 #include <ctype.h>
 #include <iostream>

@@ -1,7 +1,7 @@
 #ifndef STARTCOMMAND_H
 #define STARTCOMMAND_H
-#include "command.h"
-#include "startview.h"
+#include "Command.h"
+#include "StartView.h"
 
 class StartCommand: public Command
 {

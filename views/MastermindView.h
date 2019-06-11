@@ -1,17 +1,17 @@
 #ifndef MASTERMINDVIEW_H
 #define MASTERMINDVIEW_H
 #include "controller.h"
-#include "controllervisitor.h"
+#include "ControllerVisitor.h"
 #include "startcontroller.h"
 #include "colocatecontroller.h"
-#include "startview.h"
-#include "views/models/gameview.h"
-#include "continueview.h"
+#include "StartView.h"
+#include "views/models/GameView.h"
+#include "ContinueView.h"
 //////////////////////////////////////////////////////////////////////
 #include "compositeinitialcontroller.h"
 #include "compositeingamecontroller.h"
-#include "views/menuComposite/initialmenuview.h"
-#include "views/menuComposite/ingamemenuview.h"
+#include "views/menuComposite/InitialMenuView.h"
+#include "views/menuComposite/InGameMenuView.h"
 
 
 class MasterMindView : public ControllerVisitor

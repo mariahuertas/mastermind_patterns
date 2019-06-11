@@ -4,7 +4,7 @@
 #include <models/proposedcombination.h>
 #include "controller.h"
 #include "iostream"
-#include "controllervisitor.h"
+#include "ControllerVisitor.h"
 
 class ColocateController : public Controller
 {

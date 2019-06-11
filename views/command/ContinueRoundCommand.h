@@ -1,7 +1,7 @@
 #ifndef CONTINUEROUNDCOMMAND_H
 #define CONTINUEROUNDCOMMAND_H
-#include "command.h"
-#include "views/models/gameview.h"
+#include "Command.h"
+#include "views/models/GameView.h"
 
 class ContinueRoundCommand: public Command
 {

@@ -1,6 +1,6 @@
 #ifndef LOADCOMMAND_H
 #define LOADCOMMAND_H
-#include "command.h"
+#include "Command.h"
 
 class LoadCommand: public Command
 {

@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_VIEWS_UNDOCONTROLLER_H
 #define MASTERMIND_VIEWS_UNDOCONTROLLER_H
 
-#include <controllervisitor.h>
+#include <ControllerVisitor.h>
 #include "controller.h"
 
 class UndoController: public Controller {

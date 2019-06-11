@@ -1,7 +1,7 @@
 #ifndef CONTINUECONTROLLER_H
 #define CONTINUECONTROLLER_H
 #include "controller.h"
-#include "controllervisitor.h"
+#include "ControllerVisitor.h"
 
 class ControllerVisitor;
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "exitcommand.h"
+#include "ExitCommand.h"
 
 ExitCommand::ExitCommand(Game *game): Command("Exit"){
     this->exitController = new ExitController(game);

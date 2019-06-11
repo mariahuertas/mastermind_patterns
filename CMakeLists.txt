@@ -10,21 +10,21 @@ include_directories(models)
 include_directories(views)
 
 add_executable(mastermind
-        views/command/command.h
-        views/command/continueroundcommand.cpp
-        views/command/continueroundcommand.h
-        views/command/exitcommand.cpp
-        views/command/exitcommand.h
-        views/command/loadcommand.cpp
-        views/command/loadcommand.h
-        views/command/redocommand.cpp
-        views/command/redocommand.h
-        views/command/savecommand.cpp
-        views/command/savecommand.h
-        views/command/startcommand.cpp
-        views/command/startcommand.h
-        views/command/undocommand.cpp
-        views/command/undocommand.h
+        views/command/Command.h
+        views/command/ContinueRoundCommand.cpp
+        views/command/ContinueRoundCommand.h
+        views/command/ExitCommand.cpp
+        views/command/ExitCommand.h
+        views/command/LoadCommand.cpp
+        views/command/LoadCommand.h
+        views/command/RedoCommand.cpp
+        views/command/RedoCommand.h
+        views/command/SaveCommand.cpp
+        views/command/SaveCommand.h
+        views/command/StartCommand.cpp
+        views/command/StartCommand.h
+        views/command/UndoCommand.cpp
+        views/command/UndoCommand.h
         controllers/colocatecontroller.cpp
         controllers/colocatecontroller.h
         controllers/compositeingamecontroller.cpp
@@ -58,23 +58,23 @@ add_executable(mastermind
         models/result.h
         models/secretcombination.cpp
         models/secretcombination.h
-        views/continueview.cpp
-        views/continueview.h
-        views/controllervisitor.h
-        views/models/gameview.cpp
-        views/models/gameview.h
-        views/menuComposite/ingamemenuview.cpp
-        views/menuComposite/ingamemenuview.h
-        views/menuComposite/initialmenuview.cpp
-        views/menuComposite/initialmenuview.h
-        views/mastermindview.cpp
-        views/mastermindview.h
-        views/models/proposedcombinationview.cpp
-        views/models/proposedcombinationview.h
-        views/models/secretcombinationview.cpp
-        views/models/secretcombinationview.h
-        views/startview.cpp
-        views/startview.h
+        views/ContinueView.cpp
+        views/ContinueView.h
+        views/ControllerVisitor.h
+        views/models/GameView.cpp
+        views/models/GameView.h
+        views/menuComposite/InGameMenuView.cpp
+        views/menuComposite/InGameMenuView.h
+        views/menuComposite/InitialMenuView.cpp
+        views/menuComposite/InitialMenuView.h
+        views/MastermindView.cpp
+        views/MastermindView.h
+        views/models/ProposedCombinationview.cpp
+        views/models/ProposedCombinationview.h
+        views/models/SecretCombinationview.cpp
+        views/models/SecretCombinationview.h
+        views/StartView.cpp
+        views/StartView.h
         CMakeLists.txt
         main.cpp
         mastermind.cpp

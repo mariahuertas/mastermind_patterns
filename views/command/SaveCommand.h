@@ -1,6 +1,6 @@
 #ifndef SAVECOMMAND_H
 #define SAVECOMMAND_H
-#include "command.h"
+#include "Command.h"
 #include "SaveController.h"
 
 class SaveCommand: public Command

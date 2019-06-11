@@ -1,4 +1,4 @@
-#include "ingamemenuview.h"
+#include "InGameMenuView.h"
 
 void InGameMenuView:: interact(CompositeInGameController *compositeInGameController){
     printMenu(compositeInGameController->getCommandVector());

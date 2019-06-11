@@ -2,7 +2,7 @@
 #define CONTROLLER_H
 
 #include <models/Registry.h>
-#include "controllervisitor.h"
+#include "ControllerVisitor.h"
 #include "state.h"
 
 class Controller

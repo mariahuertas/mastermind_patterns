@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctype.h>
-#include "views/mastermindview.h"
+#include "views/MastermindView.h"
 
 class MasterMind
 {

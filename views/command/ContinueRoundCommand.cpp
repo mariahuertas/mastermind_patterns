@@ -1,4 +1,4 @@
-#include "continueroundcommand.h"
+#include "ContinueRoundCommand.h"
 
 ContinueRoundCommand::ContinueRoundCommand(ColocateController* colocateController): Command("Next Round"){
     colocateController_ = colocateController;

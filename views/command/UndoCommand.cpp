@@ -1,5 +1,5 @@
 #include <iostream>
-#include "undocommand.h"
+#include "UndoCommand.h"
 
 UndoCommand::UndoCommand(Game *game, Registry* registry): Command("Undo"){
     this->undoController = new UndoController(game);

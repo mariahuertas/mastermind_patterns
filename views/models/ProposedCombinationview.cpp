@@ -1,4 +1,4 @@
-#include "proposedcombinationview.h"
+#include "ProposedCombinationview.h"
 
 ProposedCombinationView::ProposedCombinationView(ColocateController *colocateController){
     this->colocateController=colocateController;

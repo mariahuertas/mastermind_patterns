@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_REDOCONTROLLER_H
 #define MASTERMIND_REDOCONTROLLER_H
 
-#include <controllervisitor.h>
+#include <ControllerVisitor.h>
 #include "controller.h"
 
 class RedoController: public Controller {

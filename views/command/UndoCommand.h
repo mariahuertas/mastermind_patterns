@@ -1,6 +1,6 @@
 #ifndef UNDOCOMMAND_H
 #define UNDOCOMMAND_H
-#include "command.h"
+#include "Command.h"
 #include "vector"
 #include "UndoController.h"
 

@@ -1,12 +1,12 @@
 #ifndef COMPOSITEINITIALCONTROLLER_H
 #define COMPOSITEINITIALCONTROLLER_H
-#include "command.h"
-#include "loadcommand.h"
-#include "savecommand.h"
-#include "redocommand.h"
-#include "undocommand.h"
-#include "exitcommand.h"
-#include "startcommand.h"
+#include "Command.h"
+#include "LoadCommand.h"
+#include "SaveCommand.h"
+#include "RedoCommand.h"
+#include "UndoCommand.h"
+#include "ExitCommand.h"
+#include "StartCommand.h"
 #include <vector>
 #include "controller.h"
 

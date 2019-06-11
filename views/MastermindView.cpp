@@ -1,4 +1,4 @@
-#include "mastermindview.h"
+#include "MastermindView.h"
 
 MasterMindView::MasterMindView(){
     startView = new StartView();

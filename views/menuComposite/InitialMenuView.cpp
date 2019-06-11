@@ -1,4 +1,4 @@
-#include "initialmenuview.h"
+#include "InitialMenuView.h"
 
 void InitialMenuView:: interact(CompositeInitialController *compositeInitialController){
     std::cout << "Welcome to the Mastermind. Insert 4 colors each round" << std::endl;

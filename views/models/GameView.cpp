@@ -1,4 +1,4 @@
-#include "gameview.h"
+#include "GameView.h"
 
 void GameView:: interact(ColocateController *colocateController){
     assert(colocateController!= nullptr);

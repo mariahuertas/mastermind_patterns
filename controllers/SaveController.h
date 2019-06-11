@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_SAVECONTROLLER_H
 #define MASTERMIND_SAVECONTROLLER_H
 
-#include <controllervisitor.h>
+#include <ControllerVisitor.h>
 #include "controller.h"
 
 class SaveController : public Controller {
