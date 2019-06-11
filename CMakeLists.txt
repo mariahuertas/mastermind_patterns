@@ -58,8 +58,6 @@ add_executable(mastermind
         models/result.h
         models/secretcombination.cpp
         models/secretcombination.h
-        views/colocateview.cpp
-        views/colocateview.h
         views/continueview.cpp
         views/continueview.h
         views/controllervisitor.h
