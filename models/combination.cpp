@@ -11,6 +11,7 @@ char* Combination::getCombination(){
 }
 
 void Combination::setCombination(char *combination){
+    assert(combination!=nullptr);
     this->combination.clear();
     this->combination.push_back(combination[0]);
     this->combination.push_back(combination[1]);

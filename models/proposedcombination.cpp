@@ -13,10 +13,12 @@ Result *ProposedCombination::getResult() {
 }
 
 void ProposedCombination::setProposedCombination(char *proposedCombination) {
+    assert(proposedCombination!= nullptr);
     setCombination(proposedCombination);
 }
 
 void ProposedCombination::calculateResult(SecretCombination *secretCombination) {
+    assert(secretCombination!= nullptr);
     char *combination = secretCombination->getCombination();
     bool *markedCombination = new bool[colours];
     for (int i = 0; i < colours; i++) {

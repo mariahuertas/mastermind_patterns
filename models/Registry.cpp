@@ -2,11 +2,13 @@
 #include "game.h"
 
 Registry::Registry(Game *game) {
+    assert(game!= nullptr);
     this->game = game;
     this->firstPrevious = 0;
 }
 
 void Registry::undo(Game *game){
+    assert(game!= nullptr);
     GameMementoInterface *gameMemento = game->createMemento();
     game->restoreMemento(undoList_.front());
     undoList_.pop_front();
@@ -14,6 +16,7 @@ void Registry::undo(Game *game){
 }
 
 void Registry::redo(Game *game) {
+    assert(game!= nullptr);
     GameMementoInterface *gameMemento = game->createMemento();
     game->restoreMemento(redoList_.front());
     redoList_.push_front(gameMemento);
