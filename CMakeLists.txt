@@ -4,27 +4,27 @@ project(mastermind)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
-include_directories(command)
+include_directories(views/command)
 include_directories(controllers)
 include_directories(models)
 include_directories(views)
 
 add_executable(mastermind
-        command/command.h
-        command/continueroundcommand.cpp
-        command/continueroundcommand.h
-        command/exitcommand.cpp
-        command/exitcommand.h
-        command/loadcommand.cpp
-        command/loadcommand.h
-        command/redocommand.cpp
-        command/redocommand.h
-        command/savecommand.cpp
-        command/savecommand.h
-        command/startcommand.cpp
-        command/startcommand.h
-        command/undocommand.cpp
-        command/undocommand.h
+        views/command/command.h
+        views/command/continueroundcommand.cpp
+        views/command/continueroundcommand.h
+        views/command/exitcommand.cpp
+        views/command/exitcommand.h
+        views/command/loadcommand.cpp
+        views/command/loadcommand.h
+        views/command/redocommand.cpp
+        views/command/redocommand.h
+        views/command/savecommand.cpp
+        views/command/savecommand.h
+        views/command/startcommand.cpp
+        views/command/startcommand.h
+        views/command/undocommand.cpp
+        views/command/undocommand.h
         controllers/colocatecontroller.cpp
         controllers/colocatecontroller.h
         controllers/compositeingamecontroller.cpp
@@ -61,18 +61,18 @@ add_executable(mastermind
         views/continueview.cpp
         views/continueview.h
         views/controllervisitor.h
-        views/gameview.cpp
-        views/gameview.h
-        views/ingamemenuview.cpp
-        views/ingamemenuview.h
-        views/initialmenuview.cpp
-        views/initialmenuview.h
+        views/models/gameview.cpp
+        views/models/gameview.h
+        views/menuComposite/ingamemenuview.cpp
+        views/menuComposite/ingamemenuview.h
+        views/menuComposite/initialmenuview.cpp
+        views/menuComposite/initialmenuview.h
         views/mastermindview.cpp
         views/mastermindview.h
-        views/proposedcombinationview.cpp
-        views/proposedcombinationview.h
-        views/secretcombinationview.cpp
-        views/secretcombinationview.h
+        views/models/proposedcombinationview.cpp
+        views/models/proposedcombinationview.h
+        views/models/secretcombinationview.cpp
+        views/models/secretcombinationview.h
         views/startview.cpp
         views/startview.h
         CMakeLists.txt

@@ -10,7 +10,7 @@
 #include "continueroundcommand.h"
 #include <vector>
 #include "controller.h"
-#include "gameview.h"
+#include "views/models/gameview.h"
 #include "colocatecontroller.h"
 
 class CompositeInGameController: public Controller

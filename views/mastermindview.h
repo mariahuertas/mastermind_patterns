@@ -5,13 +5,13 @@
 #include "startcontroller.h"
 #include "colocatecontroller.h"
 #include "startview.h"
-#include "gameview.h"
+#include "views/models/gameview.h"
 #include "continueview.h"
 //////////////////////////////////////////////////////////////////////
 #include "compositeinitialcontroller.h"
 #include "compositeingamecontroller.h"
-#include "initialmenuview.h"
-#include "ingamemenuview.h"
+#include "views/menuComposite/initialmenuview.h"
+#include "views/menuComposite/ingamemenuview.h"
 
 
 class MasterMindView : public ControllerVisitor

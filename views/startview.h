@@ -1,7 +1,7 @@
 #ifndef STARTVIEW_H
 #define STARTVIEW_H
 #include "startcontroller.h"
-#include "secretcombinationview.h"
+#include "views/models/secretcombinationview.h"
 class StartView
 {
 public:
