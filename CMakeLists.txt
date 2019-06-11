@@ -60,7 +60,7 @@ add_executable(mastermind
         models/SecretCombination.h
         views/ContinueView.cpp
         views/ContinueView.h
-        views/ControllerVisitor.h
+        controllers/ControllerVisitor.h
         views/models/GameView.cpp
         views/models/GameView.h
         views/menuComposite/InGameMenuView.cpp
