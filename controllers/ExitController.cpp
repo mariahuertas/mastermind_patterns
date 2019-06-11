@@ -8,5 +8,5 @@ void ExitController::accept(ControllerVisitor *controllerVisitor){
 }
 
 void ExitController::exit(){
-    game->setState(EXIT);
+    this->game->setState(EXIT);
 }

@@ -9,7 +9,7 @@ Controller::Controller(Game *game){
 }
 
 void Controller::setState(State state){
-    return game->setState(state);
+    return this->game->setState(state);
 }
 
 

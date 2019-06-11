@@ -7,7 +7,7 @@ void UndoController::accept(ControllerVisitor *controllerVisitor) {
 }
 
 void UndoController::undo() {
-    registry->undo(this->game);
+    this->registry->undo(this->game);
 }
 
 GameMementoInterface *UndoController::createMemento() {
@@ -16,6 +16,6 @@ GameMementoInterface *UndoController::createMemento() {
 
 void UndoController::restoreMemento(GameMementoInterface *gameMemento) {
     assert(gameMemento!= nullptr);
-    game->restoreMemento(gameMemento);
+    this->game->restoreMemento(gameMemento);
 }
 

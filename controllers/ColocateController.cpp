@@ -4,25 +4,25 @@
 ColocateController::ColocateController(Game *game) : Controller(game){}
 
 ProposedCombination** ColocateController::getProposedCombination(){
-    return game->getProposedCombination();
+    return this->game->getProposedCombination();
 }
 
 void ColocateController::incrementTurn(){
-    return game->incrementTurn();
+    return this->game->incrementTurn();
 }
 
 void ColocateController::read(char *combination){
     assert(combination!= nullptr);
     this->registry->execute();
-    return game->read(combination);
+    return this->game->read(combination);
 }
 
 void ColocateController::calculateResult(){
-    return game->calculateResult();
+    return this->game->calculateResult();
 }
 
 bool ColocateController::isWinner(){
-    return game->isWinner();
+    return this->game->isWinner();
 }
 
 void ColocateController::accept(ControllerVisitor *controllerVisitor){
@@ -30,5 +30,5 @@ void ColocateController::accept(ControllerVisitor *controllerVisitor){
 }
 
 int ColocateController::getTurn(){
-    return game->getTurn();
+    return this->game->getTurn();
 }

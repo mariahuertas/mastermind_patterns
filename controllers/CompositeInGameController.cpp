@@ -11,7 +11,7 @@ CompositeInGameController::CompositeInGameController(Game *game, Registry *regis
 
 
 std::vector<Command*> CompositeInGameController:: getCommandVector(){
-    return this-> commandVector;
+    return this->commandVector;
 }
 
 void CompositeInGameController::accept(ControllerVisitor *controllerVisitor){
@@ -19,6 +19,6 @@ void CompositeInGameController::accept(ControllerVisitor *controllerVisitor){
 }
 
 void CompositeInGameController::launchCommand(int option){
-this->commandVector[option]->execute();
+    this->commandVector[option]->execute();
 }
 

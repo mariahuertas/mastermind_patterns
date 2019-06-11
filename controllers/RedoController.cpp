@@ -9,7 +9,7 @@ void RedoController::accept(ControllerVisitor *controllerVisitor) {
 }
 
 void RedoController::redo() {
-    registry->redo(this->game);
+    this->registry->redo(this->game);
 }
 
 GameMementoInterface *RedoController::createMemento() {
@@ -18,5 +18,5 @@ GameMementoInterface *RedoController::createMemento() {
 
 void RedoController::restoreMemento(GameMementoInterface *gameMemento) {
     assert(gameMemento!= nullptr);
-    game->restoreMemento(gameMemento);
+    this->game->restoreMemento(gameMemento);
 }

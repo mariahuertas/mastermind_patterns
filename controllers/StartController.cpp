@@ -8,10 +8,10 @@ void StartController::accept(ControllerVisitor *controllerVisitor){
 }
 
 void StartController::start(){
-    game->generateMisteryColours();
-    game->setState(IN_GAME);
+    this->game->generateMisteryColours();
+    this->game->setState(IN_GAME);
 }
 
 char* StartController::getSecretCombination(){
-    return game->getSecretCombination();
+    return this->game->getSecretCombination();
 }

@@ -13,7 +13,7 @@ void ContinueController::continueGame(char option){
 }
 
 void ContinueController::clear(){
-    return game->clear();
+    return this->game->clear();
 }
 
 void ContinueController::accept(ControllerVisitor *controllerVisitor){
