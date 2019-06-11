@@ -1,7 +1,7 @@
 #ifndef MASTERMIND_GAMEDAO_H
 #define MASTERMIND_GAMEDAO_H
 
-#include <controllers/game.h>
+#include <models/game.h>
 #include "DAO.h"
 #include "SecretCombinationDAO.h"
 

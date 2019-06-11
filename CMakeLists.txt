@@ -37,8 +37,8 @@ add_executable(mastermind
         controllers/controller.h
         controllers/ExitController.cpp
         controllers/ExitController.h
-        controllers/game.cpp
-        controllers/game.h
+        models/game.cpp
+        models/game.h
         controllers/logic.cpp
         controllers/logic.h
         controllers/startcontroller.cpp

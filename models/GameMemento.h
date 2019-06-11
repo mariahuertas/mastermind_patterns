@@ -3,7 +3,7 @@
 
 #include <controllers/state.h>
 #include "GameMementoInterface.h"
-#include <controllers/game.h>
+#include <models/game.h>
 #include "proposedcombination.h"
 
 class GameMemento : public GameMementoInterface {
