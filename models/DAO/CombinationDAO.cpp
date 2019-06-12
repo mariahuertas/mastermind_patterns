@@ -3,18 +3,12 @@
 CombinationDAO::CombinationDAO(Combination *combination) : combination(combination) {}
 
 void CombinationDAO::save(std::string fileWriter) {
-    /*
-    for (Color color : this.combination.getColors()) {
-        fileWriter.write(color.name() + "\n");}
-        */
+    //TODO: find a C++ library for saving the combination, where fileWriter is an object of that library
+    // fileWriter.write(combibation.getCombination);
 }
 
 void CombinationDAO::load(std::string bufferedReader) {
-/*
- for (int i = 0; i < Combination.getWidth(); i++) {
-				String color = bufferedReader.readLine();
-				this.combination.addColor(Color.valueOf(color));
-}
- * */
+    //TODO: find a C++ library for loading the combination, where bufferedReader is an object of that library
+    // this.combination.setCombination(getLine(bufferedReader));
 }
 

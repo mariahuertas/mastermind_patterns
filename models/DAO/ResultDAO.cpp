@@ -5,17 +5,15 @@ ResultDAO::ResultDAO(Result* result) {
 }
 
 void ResultDAO::save(std::string fileWriter) {
-/*
- fileWriter.write(this.result.getBlacks() + "\n");
-fileWriter.write(this.result.getWhites() + "\n");
- * */
+    //TODO: find a C++ library for saving the results, where fileWriter is an object of that library
+    // fileWriter.write(this.result.getBlackToken() + "\n");
+    // fileWriter.write(this.result.getWhiteToken() + "\n");
 }
 
 void ResultDAO::load(std::string bufferedReader) {
-/*
- this.result.setBlacks(Integer.parseInt(bufferedReader.readLine()));
-this.result.setWhites(Integer.parseInt(bufferedReader.readLine()));
- * */
+    //TODO: find a C++ library for loading the result, where bufferedReader is an object of that library
+    // this.result.setBlackToken(bufferedReader.getLine());
+    // this.result.setWhiteToken(bufferedReader.getLine());
 }
 
 Result* ResultDAO::getResul() {

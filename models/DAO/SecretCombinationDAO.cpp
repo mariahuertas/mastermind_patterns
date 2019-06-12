@@ -5,10 +5,7 @@ SecretCombinationDAO::SecretCombinationDAO(SecretCombination *secretCombination)
 }
 
 void SecretCombinationDAO::load(std::string bufferedReader) {
-    /*
-     this.combination.clearColors();
-super.load(bufferedReader);
-     */
+    // TODO: clean color, that previusly could be saved in Combination, and execute next line
     CombinationDAO::load(bufferedReader);
 }
 
