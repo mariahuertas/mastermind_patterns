@@ -69,10 +69,10 @@ add_executable(mastermind
         views/menuComposite/InitialMenuView.h
         views/MastermindView.cpp
         views/MastermindView.h
-        views/models/ProposedCombinationview.cpp
-        views/models/ProposedCombinationview.h
-        views/models/SecretCombinationview.cpp
-        views/models/SecretCombinationview.h
+        views/models/ProposedCombinationView.cpp
+        views/models/ProposedCombinationView.h
+        views/models/SecretCombinationView.cpp
+        views/models/SecretCombinationView.h
         views/StartView.cpp
         views/StartView.h
         CMakeLists.txt
