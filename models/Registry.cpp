@@ -9,17 +9,17 @@ Registry::Registry(Game *game) {
 
 void Registry::undo(Game *game){
     assert(game!= nullptr);
-    GameMementoInterface *gameMemento = game->createMemento();
+    this->firstPrevious++;
     game->restoreMemento(undoList_.front());
     undoList_.pop_front();
-    redoList_.push_front(gameMemento);
+    redoList_.push_front(game->createMemento());
 }
 
 void Registry::redo(Game *game) {
     assert(game!= nullptr);
-    GameMementoInterface *gameMemento = game->createMemento();
+    this->firstPrevious--;
     game->restoreMemento(redoList_.front());
-    redoList_.push_front(gameMemento);
+    redoList_.push_front(game->createMemento());
     undoList_.pop_front();
 }
 

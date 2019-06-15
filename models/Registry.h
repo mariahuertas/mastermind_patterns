@@ -1,6 +1,7 @@
 #ifndef MASTERMIND_REGISTRY_H
 #define MASTERMIND_REGISTRY_H
 #include <list>
+#include <vector>
 #include "GameMementoInterface.h"
 
 class Game;
