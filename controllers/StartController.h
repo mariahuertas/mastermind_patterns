@@ -5,7 +5,7 @@
 
 class StartController: public Controller {
 public:
-    StartController(Game *game);
+    explicit StartController(Game *game);
     void accept(ControllerVisitor *controllerVisitor) override;
     void start();
     char* getSecretCombination();

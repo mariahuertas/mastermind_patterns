@@ -5,8 +5,9 @@ ContinueRoundCommand::ContinueRoundCommand(ColocateController* colocateControlle
 }
 
 void ContinueRoundCommand::execute(){
-    GameView *gameView = new GameView();
+    auto *gameView = new GameView();
     gameView->interact(this->colocateController_);
+    colocateController_->registryMemento();
 }
 
 bool ContinueRoundCommand::isActive() {

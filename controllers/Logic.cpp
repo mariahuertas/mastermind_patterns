@@ -6,7 +6,6 @@ Logic::Logic(){
     registry = new Registry(game);
     compositeInitialController = new CompositeInitialController(game, registry);
     compositeInGameController = new CompositeInGameController(game, registry);
-
 }
 
 Controller *Logic::getController(){
@@ -17,6 +16,6 @@ Controller *Logic::getController(){
         return compositeInGameController;
         case (EXIT):
     default:
-        return NULL;
+        return nullptr;
     }
 }

@@ -5,26 +5,31 @@ Registry::Registry(Game *game) {
     assert(game!= nullptr);
     this->game = game;
     this->firstPrevious = 0;
+    this->mementoVector_ = new std::vector <GameMementoInterface*>();
+}
+
+void Registry::registry() {
+    for(unsigned int i=0; i<this->firstPrevious; i++){
+        this->mementoVector_->pop_back();
+    }
+    this->firstPrevious = 0;
+    this->mementoVector_->push_back(this->game->createMemento());
 }
 
 void Registry::undo(Game *game){
     assert(game!= nullptr);
     this->firstPrevious++;
-    game->restoreMemento(undoList_.front());
-    undoList_.pop_front();
-    redoList_.push_front(game->createMemento());
+    game->restoreMemento(this->mementoVector_->at(this->firstPrevious));
 }
 
 void Registry::redo(Game *game) {
     assert(game!= nullptr);
     this->firstPrevious--;
-    game->restoreMemento(redoList_.front());
-    redoList_.push_front(game->createMemento());
-    undoList_.pop_front();
+    game->restoreMemento(this->mementoVector_->at(this->firstPrevious));
 }
 
 bool Registry::undoable()  {
-    return this->firstPrevious < this->undoList_.size() - 1;;
+    return this->firstPrevious < this->mementoVector_->size() - 1;;
 }
 
 bool Registry::redoable() {
@@ -33,14 +38,8 @@ bool Registry::redoable() {
 
 void Registry::reset() {
     if (this->game->getTurn() == 0){
-        undoList_.clear();
-        redoList_.clear();
-        this->firstPrevious = 0;
+        this->mementoVector_ = new std::vector <GameMementoInterface*>();
+        this->mementoVector_->push_back(this->game->createMemento());
+        this->firstPrevious= 0;
     }
-}
-
-void Registry::execute() {
-    GameMementoInterface *gameMemento = this->game->createMemento();
-    undoList_.push_front(gameMemento);
-    redoList_.clear();
 }

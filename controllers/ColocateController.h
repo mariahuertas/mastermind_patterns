@@ -9,14 +9,15 @@
 class ColocateController : public Controller
 {
 public:
+    explicit ColocateController(Game *game);
     void accept(ControllerVisitor *controllerVisitor) override;
-    ColocateController(Game *game);
     bool isWinner();
     void read(char *combination);
     void calculateResult();
     ProposedCombination** getProposedCombination();
     void incrementTurn();
     int getTurn();
+    void registryMemento();
 };
 
 #endif // COLOCATECONTROLLER_H

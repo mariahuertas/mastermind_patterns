@@ -5,7 +5,7 @@
 class LoadCommand: public Command
 {
 public:
-    LoadCommand(Game *game);
+    explicit LoadCommand(Game *game);
     void execute() override;
     bool isActive() override;
 };

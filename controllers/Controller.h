@@ -12,7 +12,7 @@ public:
     void setState(State state);
 
 protected:
-    Controller(Game *game);
+    explicit Controller(Game *game);
     Game *game;
     Registry *registry;
 };

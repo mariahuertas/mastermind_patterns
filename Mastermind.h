@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <ctype.h>
 #include "views/MastermindView.h"
+#include <memory>
 
 class MasterMind
 {

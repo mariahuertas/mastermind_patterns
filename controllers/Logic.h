@@ -4,6 +4,7 @@
 #include "State.h"
 #include "CompositeInitialController.h"
 #include "CompositeInGameController.h"
+#include <memory>
 
 class Logic
 {

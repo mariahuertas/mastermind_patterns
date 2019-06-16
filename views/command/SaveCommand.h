@@ -11,7 +11,6 @@ public:
     bool isActive() override;
 private:
     SaveController *saveController;
-
 };
 
 #endif // SAVECOMMAND_H

@@ -8,19 +8,18 @@ class Game;
 
 class Registry {
 public:
-    Registry(Game *game);
+    explicit Registry(Game *game);
+    void registry();
     void undo(Game *game);
     void redo(Game *game);
     bool undoable();
     bool redoable();
     void reset();
-    void execute();
 
 private:
-    std::list<GameMementoInterface*> undoList_;
-    std::list<GameMementoInterface*> redoList_;
+    std::vector<GameMementoInterface*> *mementoVector_;
     Game *game;
-    int firstPrevious;
+    unsigned long firstPrevious;
 };
 
 

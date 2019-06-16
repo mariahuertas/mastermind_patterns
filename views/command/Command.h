@@ -6,7 +6,7 @@
 class Command
 {
 public:
-    Command(std::string title){this->title=title;}
+    explicit Command(std::string title){this->title= std::move(title);}
     virtual std::string getTitle(){return this->title;}
     virtual void execute()=0;
     virtual bool isActive() = 0;

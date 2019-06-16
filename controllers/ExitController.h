@@ -5,7 +5,7 @@
 
 class ExitController: public Controller {
 public:
-    ExitController(Game *game);
+    explicit ExitController(Game *game);
     void accept(ControllerVisitor *controllerVisitor) override;
     void exit();
 };

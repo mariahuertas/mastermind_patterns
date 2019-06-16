@@ -6,7 +6,7 @@
 class ExitCommand: public Command
 {
 public:
-    ExitCommand(Game *game);
+    explicit ExitCommand(Game *game);
     void execute() override;
     bool isActive() override;
 

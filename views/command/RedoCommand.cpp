@@ -12,7 +12,7 @@ void RedoCommand::execute(){
 }
 
 bool RedoCommand::isActive() {
-    return true;
+    return this->mementoRegistry_->redoable();
 }
 
 

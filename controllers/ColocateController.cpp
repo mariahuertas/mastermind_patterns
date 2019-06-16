@@ -13,7 +13,6 @@ void ColocateController::incrementTurn(){
 
 void ColocateController::read(char *combination){
     assert(combination!= nullptr);
-    this->registry->execute();
     return this->game->read(combination);
 }
 
@@ -31,4 +30,8 @@ void ColocateController::accept(ControllerVisitor *controllerVisitor){
 
 int ColocateController::getTurn(){
     return this->game->getTurn();
+}
+
+void ColocateController::registryMemento() {
+    this->registry->registry();
 }

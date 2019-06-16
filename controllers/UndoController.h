@@ -6,11 +6,9 @@
 
 class UndoController: public Controller {
 public:
-    UndoController(Game *game);
+    explicit UndoController(Game *game);
     void accept(ControllerVisitor *controllerVisitor) override;
     void undo();
-    void restoreMemento(GameMementoInterface* gameMemento);
-    GameMementoInterface* createMemento();
 };
 
 

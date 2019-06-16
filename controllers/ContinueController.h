@@ -7,7 +7,7 @@ class ControllerVisitor;
 
 class ContinueController : public Controller{
 public:
-    ContinueController(Game *game);
+    explicit ContinueController(Game *game);
     void continueGame(char option);
     void accept(ControllerVisitor *controllerVisitor) override;
     void clear();

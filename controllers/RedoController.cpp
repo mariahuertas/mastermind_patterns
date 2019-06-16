@@ -12,11 +12,3 @@ void RedoController::redo() {
     this->registry->redo(this->game);
 }
 
-GameMementoInterface *RedoController::createMemento() {
-    return this->game->createMemento();
-}
-
-void RedoController::restoreMemento(GameMementoInterface *gameMemento) {
-    assert(gameMemento!= nullptr);
-    this->game->restoreMemento(gameMemento);
-}

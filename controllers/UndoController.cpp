@@ -10,12 +10,3 @@ void UndoController::undo() {
     this->registry->undo(this->game);
 }
 
-GameMementoInterface *UndoController::createMemento() {
-    return this->game->createMemento();
-}
-
-void UndoController::restoreMemento(GameMementoInterface *gameMemento) {
-    assert(gameMemento!= nullptr);
-    this->game->restoreMemento(gameMemento);
-}
-

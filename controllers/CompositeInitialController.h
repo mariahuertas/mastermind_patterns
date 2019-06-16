@@ -13,8 +13,8 @@
 class CompositeInitialController: public Controller
 {
 public:
-    void accept(ControllerVisitor *controllerVisitor) override;
     CompositeInitialController(Game *game, Registry *registry);
+    void accept(ControllerVisitor *controllerVisitor) override;
     std::vector<Command*> getCommandVector();
     void setCommands();
     void launchCommand(int option);

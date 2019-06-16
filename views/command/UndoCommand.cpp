@@ -12,6 +12,6 @@ void UndoCommand::execute(){
 }
 
 bool UndoCommand::isActive() {
-    return true;
+    return this->mementoRegistry_->undoable();
 }
 

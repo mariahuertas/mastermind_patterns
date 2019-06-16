@@ -6,8 +6,8 @@
 
 class SaveController : public Controller {
 public:
-    SaveController(Game *game);
-    void accept(ControllerVisitor *controllerVisitor);
+    explicit SaveController(Game *game);
+    void accept(ControllerVisitor *controllerVisitor) override;
     void save();
 
 };
