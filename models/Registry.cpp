@@ -4,8 +4,8 @@
 Registry::Registry(Game *game) {
     assert(game!= nullptr);
     this->game = game;
-    this->firstPrevious = 0;
     this->mementoVector_ = new std::vector <GameMementoInterface*>();
+    this->firstPrevious = 0;
 }
 
 void Registry::registry() {
@@ -37,9 +37,7 @@ bool Registry::redoable() {
 }
 
 void Registry::reset() {
-    if (this->game->getTurn() == 0){
-        this->mementoVector_ = new std::vector <GameMementoInterface*>();
-        this->mementoVector_->push_back(this->game->createMemento());
-        this->firstPrevious= 0;
-    }
+    this->mementoVector_ = new std::vector <GameMementoInterface*>();
+    this->firstPrevious= 0;
+    this->mementoVector_->push_back(this->game->createMemento());
 }
